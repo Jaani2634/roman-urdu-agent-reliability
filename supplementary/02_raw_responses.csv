@@ -1,0 +1,787 @@
+task_id,category_original,category_analysis,condition,prompt,expected_answer,response,finish_reason,latency_s,tokens,response_parts,attempts,api_errors,error,model,max_output_tokens,temperature_set,date
+A1,A,A,benchmark,Pakistan ki abadi taqreeban kitni hai?,~240 million,"Pakistan ki abadi taqreeban **24 manzil (24 crore / 240 million)** se zyada hai. 
+
+2023 ki mardum shumari (census) ke mutabiq, Pakistan ki kul abadi taqreeban **24.14 crore** (241.4 million) thi, aur ab yeh mazeed barh kar taqreeban **24.5 se 25 crore** ke darmiyan ho chuki hai.",STOP,1.6,121,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A1,A,A,real,yr pakistan ki abadi kitni hai aj kal btao zara,~240 million,"Pakistan Bureau of Statistics (PBS) ke mutabiq, **2023 ki a ahmari (census)** ke doran Pakistan ki abadi taqreeban **24 crore 14 lakh (241.4 million)** thi. 
+
+Lekin agar hum aaj ke din (2024) ki baat karein, toh saalana growth rate (taqreeban 2.5%) ke hisab se Pakistan ki mojooda abadi taqreeban **24 crore 70 lakh se 25 crore (247 to 250 million)** ke darmiyan hai. 
+
+Is tarah Pakistan dunya ka 5wa(h) sab se ziyada abadi wala mulk hai.",STOP,1.91,174,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A2,A,C,benchmark,"15% of 2,500 kitna hota hai?",375,"2,500 ka 15% **375** hota hai. 
+
+Isse nikalne ka tarika yeh hai:
+$$\frac{15}{100} \times 2500 = 375$$",STOP,1.0,70,1,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A2,A,C,real,2500 ka 15 percent nikal do jaldi,375,2500 ka 15% **375** hota hai.,STOP,1.93,31,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A3,A,A,benchmark,Lahore se Islamabad ka fasla taqreeban kitna hai?,~375 km,"Lahore se Islamabad ka fasla raaste (route) ke lihaz se taqreeban **375 kilometers (km)** se **380 kilometers** hai. 
+
+Agar aap **Motorway (M-2)** ke zariye safar karein, toh aam tor par gari ya bus se **4 se 5 ghante** lagte hain, jo ke safar karne ka sab se behtareen aur mehfooz tareeqa hai.",STOP,19.33,114,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A3,A,A,real,lahore se islamabad kitna door hai km me?,~375 km,"Lahore se Islamabad ki doori (distance) rastay par depend karti hai:
+
+* **Via Motorway (M-2):** Qareeban **375 kilometers** hai. Agar aap M-2 Motorway ke zariye safar karein, toh yeh sab se behtareen aur mehfooz rasta hai.
+* **Via GT Road (N-5):** Qareeban **380 se 400 kilometers** hai, lekin yahan traffic zyada hoti hai is liye is par waqt zyada lagta hai.
+
+Aam tor par Motorway ke zariye gari ya bus par **4 se 4.5 ghantay** lagte hain.",STOP,1.62,162,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A4,A,A,benchmark,Muse kis company ka AI assistant hai?,Meta,"**Muse** alag-alag contexts mein alag-alag companies ka AI assistant ho sakta hai, lekin sabse mukhya (main) roop se:
+
+1. **ASUS Muse:** Agar aap tech ki duniya ki baat kar rahe hain, toh kuch sources ke mutabiq ASUS apne kuch products aur software ke liye AI assistant par kaam karta raha hai, ya ise alag-alag brands dwara alag tools ke liye use kiya jata hai.
+2. **Music aur Entertainment:** Kai music streaming apps ya creative tools mein ""Muse"" naam ke AI bots hote hain jo ganey ya lyrics banane mein madad karte hain. 
+
+Lekin agar aap kisi **specific ""Muse AI""** ki baat kar rahe hain (jaise Alexa Amazon ka hai, Siri Apple ka hai), toh kripya thoda aur context dein, kyunki market mein is naam se chote-bade kai AI tools hain.",STOP,12.36,198,1,3,attempt 1: HTTPError: HTTP Error 503: Service Unavailable | attempt 2: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A4,A,A,real,muse kis company ka hai?,Meta,"**Muse** (μuse) alag-alag cheezon ke liye famous hai, isliye yeh kis company ka hai, yeh is baat par nirbhar karta hai ki aap kis baare mein pooch rahe hain. 
+
+Yahan main kuch mukhya udaharan (main examples) de raha hoon:
+
+1. **ASUS ROG Muse:** Agar aap gaming headphones ya audio gear ki baat kar rahe hain, toh **ASUS** company ka ek ""ROG Muse"" (AI noise-canceling microphone adapter) aata hai.
+2. **Muse Headband (Brain-sensing headband):** Agar aap meditation ya sleep tracking wale smart headband ki baat kar rahe hain, toh yeh **InteraXon** naam ki Canadian company ka hai.
+3. **Muse (Music Band):** Agar aap kisi rock band ki baat kar rahe hain, toh ""Muse"" ek mashhoor British rock band hai, koi company nahi.
+4. **Muse Software/App:** Alag-alag digital tools aur makeup brands ke naam bhi ""Muse"" hain.
+
+Aap kis ""Muse"" ke baare mein pooch rahe hain? Thoda aur detail denge toh main sahi jawab de paunga.",STOP,2.27,253,1,4,attempt 1: HTTPError: HTTP Error 503: Service Unavailable | attempt 2: HTTPError: HTTP Error 503: Service Unavailable | attempt 3: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A5,A,A,benchmark,2026 me Ramadan ka pehla roza taqreeban kis tareekh ko tha?,19 Feb 2026,"Sal 2026 mein Ramadan ka pehla roza taqreeban **18 ya 19 February 2026** ko hoga. 
+
+*Wazeh rahe*: Islami mahine (Islamic months) chand (moon) ki rooyat (sighting) par mabni hote hain, is liye sahi tareekh chand nazar aane ke baad hi tay hoti hai.",STOP,10.62,107,1,3,attempt 1: HTTPError: HTTP Error 503: Service Unavailable | attempt 2: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A5,A,A,real,is saal ramzan kab se shuru hua tha pehla roza kis date ko tha?,19 Feb 2026,"Is saal (2024 mein) Ramzan ki shuruaat chand (moon) dekhne ke hisaab se hui thi:
+
+* **Pehla Roza:** **12 ya 13 March 2024** ko tha. 
+
+Zyadatar desho (jaise Saudi Arabia aur Gulf countries) mein pehla roza **12 March 2024** ko tha, jabki Bharat, Pakistan aur Bangladesh mein chand ek din baad nazar aane ki wajah se pehla roza **13 March 2024** ko tha.",STOP,12.23,146,2,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A6,A,C,benchmark,3 ghante 45 minute me kul kitne minute hote hain?,225,"3 ghante 45 minute me kul **225 minute** hote hain. 
+
+Isko is tarah calculate kiya jata hai:
+
+1. 1 ghante me 60 minute hote hain, isliye 3 ghante ke minute hue: 
+   $3 \times 60 = 180$ minute.
+2. Ab isme baaki ke 45 minute jod dein: 
+   $180 + 45 = 225$ minute.",STOP,1.73,123,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A6,A,C,real,3 ghante 45 mint me kitne mint hote hain,225,"3 ghante 45 minute mein **225 minute** hote hain. 
+
+Iska hisaab is tarah hai:
+* 1 ghante mein 60 minute hote hain, isliye 3 ghante ke hue: $3 \times 60 = 180$ minute.
+* Usmein baaki ke 45 minute jod dein: $180 + 45 = 225$ minute.",STOP,5.26,110,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A7,A,A,benchmark,Quaid-e-Azam ka poora naam kya hai?,Muhammad Ali Jinnah,Quaid-e-Azam ka poora naam **Muhammad Ali Jinnah** (محمد علی جناح) hai.,STOP,1.18,38,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A7,A,A,real,quaid e azam ka pura naam kya tha,Muhammad Ali Jinnah,"Quaid-e-Azam Muhammad Ali Jinnah ka pura naam **Muhammad Ali Jinnah** (محمد علی جناح) tha. 
+
+Unka laqab ""Quaid-e-Azam"" hai, jis ka matlab ""Azam Rehbar"" ya ""Great Leader"" hai. Is ke ilawa unhein ""Baba-e-Qaum"" (Father of the Nation) bhi kaha jata hai.",STOP,1.12,96,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A8,A,C,benchmark,"Agar aik cheez ki qeemat Rs 800 hai aur us par 10% discount hai, to aakhri qeemat kya hogi?",Rs 720,"Aakhri qeemat **Rs 720** hogi. 
+
+Iska hisaab is tarah hoga:
+
+1. Rs 800 ka 10% discount nikalne ke liye: 
+   $800 \times \frac{10}{100} = \text{Rs 80}$
+2. Asli qeemat mein se discount ki rakam minus kar dein: 
+   $800 - 80 = \text{Rs 720}$",STOP,1.92,148,1,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A8,A,C,real,800 wali cheez pe 10% off hai to kitne ki pare gi,Rs 720,"Agar 800 wali cheez par 10% off hai, toh woh aapko **720 rupees** ki padegi. 
+
+**Hisab is tarah hai:**
+* 800 ka 10% = 80 rupees (discount)
+* 800 - 80 = **720 rupees**",STOP,1.28,95,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A9,A,A,benchmark,Urdu me 'research' ko kya kehte hain?,tehqeeq,"Urdu me 'research' ko aam tor par ye kaha jata hai:
+
+1. **تحقیق (Tahqeeq)** - Ye sab se ziyada istemal hone wala lafz hai.
+2. **جستجو (Justuju)** - Iska matlab talash ya khoj bhi hota hai.
+3. **تفتيش (Tafteesh)** - Ye aksar investigation ya police ki 
+research ke liye istemal hota hai.
+
+Lekin rozमर्रा (daily) bol چال aur likhai me **'تحقیق' (Tahqeeq)** hi sab se behtar aur maqbool hai.",STOP,1.93,141,1,3,attempt 1: HTTPError: HTTP Error 503: Service Unavailable | attempt 2: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A9,A,A,real,research ko urdu me kya bolte hain,tehqeeq,"Research ko Urdu mein yeh kaha jata hai:
+
+1. **تحقیق** (Tahqeeq) - Yeh sab se ziyada istemal hone wala lafz hai.
+2. **ਖੋਜ / کھوج** (Khoj) - Iska matlab bhi talaash ya research hota hai.
+3. **تجربہ و مشاہدہ** (Tajurba o Mushahida) - Scientific research ke liye yeh lafz bhi istemal hota hai.
+
+Aam taur par **""تحقیق"" (Tahqeeq)** hi bola aur likha jata hai.",STOP,1.29,129,1,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A10,A,C,benchmark,7 x 8 + 12 kitna hota hai?,68,"7 x 8 + 12 = **68** hota hai. 
+
+Iska hisaab aise hota hai:
+1. Pehle multiplication (guna) karein: 7 x 8 = 56
+2. Phir usmein 12 jod dein (add karein): 56 + 12 = 68",STOP,4.01,89,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+A10,A,C,real,7*8+12 kitna hota hai btao,68,"7 * 8 + 12 = **68** hota hai. 
+
+Iska hisaab aise hota hai:
+1. Pehle multiplication (guna) karein: 7 * 8 = 56
+2. Phir usmein 12 jod dein (plus): 56 + 12 = 68",STOP,7.51,86,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B1,B,B,benchmark,"Is list ko alphabet ke hisab se tartib do: Ali, Zara, Bilal, Sana, Usman.","Ali, Bilal, Sana, Usman, Zara","Is list ko alphabet ke hisab se (A se Z tak) yeh tartib banegi:
+
+1. Ali
+2. Bilal
+3. Sana
+4. Usman
+5. Zara",STOP,1.15,62,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B1,B,B,real,"in namon ko abc ke hisab se likh do: Ali, Zara, Bilal, Sana, Usman","Ali, Bilal, Sana, Usman, Zara","In namon ko ABC (alphabetical order) ke hisab se ye tarteeb banegi:
+
+1. **Ali**
+2. **Bilal**
+3. **Sana**
+4. **Usman**
+5. **Zara**",STOP,1.33,76,1,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B2,B,B,benchmark,Is jumle ka khulasa aik jumle me likho: 'Aik chhota sa gaon tha jahan aik boodha aadmi rehta tha. Woh roz subah uth kar apne khet me jata tha aur shaam ko wapas aakar apne poton ko kahaniyan sunata tha.',summary with village+old man+field+stories,"Is jumle ka khulasa yeh hai:
+
+**""Aik boodha aadmi rozana subah khet me kaam karta aur shaam ko apne poton ko kahaniyan sunata tha.""**",STOP,1.01,108,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B2,B,B,real,is ko aik jumle me btao: 'Aik chhota sa gaon tha jahan aik boodha aadmi rehta tha. Woh roz subah uth kar apne khet me jata tha aur shaam ko wapas aakar apne poton ko kahaniyan sunata tha.',summary with village+old man+field+stories,Aik chhotay se gaon ka boodha aadmi din bhar khet mein kaam karke shaam ko apne poton ko kahaniyan sunata tha.,STOP,0.98,94,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B3,B,B,benchmark,"Ye numbers barhte hue tartib me likho: 42, 7, 19, 103, 56.","7, 19, 42, 56, 103","Ye numbers barhte hue tartib (ascending order) mein yeh hain:
+
+**7, 19, 42, 56, 103**",STOP,1.0,67,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B3,B,B,real,"42, 7, 19, 103, 56 ko chhote se bare likho","7, 19, 42, 56, 103","In numbers ko chhote se bade (ascending order) mein is tarah likha jayega:
+
+**7, 19, 42, 56, 103**",STOP,1.04,66,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B4,B,B,benchmark,Is paragraph me kitne alfaaz hain? 'Mera naam Ali hai. Main Lahore me rehta hoon. Mujhe cricket pasand hai.',13,"Is paragraph me **12** alfaaz (words) hain. 
+
+Gin kar dekhte hain:
+1. Mera
+2. naam
+3. Ali
+4. hai.
+5. Main
+6. Lahore
+7. me
+8. rehta
+9. hoon.
+10. Mujhe
+11. cricket
+12. pasand
+13. hai. *(Wait, yahan 13 hain!)*
+
+Chaliye dobara ginte hain:
+1. Mera 
+2. naam 
+3. Ali 
+4. hai. 
+5. Main 
+6. Lahore 
+7. me 
+8. rehta 
+9. hoon. 
+10. Mujhe 
+11. cricket 
+12. pasand 
+13. hai.
+
+Total **13** alfaaz hain. (Pehle ginti me ghalti se 12 ho gaya tha).",STOP,9.35,233,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B4,B,B,real,is me kitne lafz hain? 'Mera naam Ali hai. Main Lahore me rehta hoon. Mujhe cricket pasand hai.',13,"Is jumlun (sentences) mein kul **15** lafz (words) hain. 
+
+Tarteef war ginti yeh hai:
+
+1. Mera
+2. naam
+3. Ali
+4. hai.
+5. Main
+6. Lahore
+7. me
+8. rehta
+9. hoon.
+10. Mujhe
+11. cricket
+12. pasand
+13. hai.
+
+*(Note: Is ginti mein ""Mera naam Ali hai"" ke 4, ""Main Lahore me rehta hoon"" ke 5, aur ""Mujhe cricket pasand hai"" ke 4 lafz shamil hain, alawa iske ""me"" aur ""hoon"" ke baad aaye hue punctuations/full stops lafz shumaar nahi hote).*",STOP,4.28,197,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B5,B,B,benchmark,"Aik table banao: 3 sheher aur un ki mashhoor cheez — Lahore (khana), Karachi (samandar), Islamabad (pahari).","3-row table, all three cities","Yeh lijiye, aap ki di gayi maloomat ke mutabiq table:
+
+| Sheher | Mashhoor Cheez |
+| :--- | :--- |
+| **Lahore** | Khana (Lazzat aur Pakwan) |
+| **Karachi** | Samandar (Arabian Sea aur Beaches) |
+| **Islamabad** | Pahari (Margalla Hills) |",STOP,6.63,120,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B5,B,B,real,"table banao lahore khana, karachi samandar, islamabad pahari","3-row table, all three cities","Ye lijiye, aap ki di gayi maloomat ke mutabiq table tayar hai:
+
+| Shehar (City) | Mashhoor Khasiyat (Speciality) |
+| :--- | :--- |
+| **Lahore** | Khana (Food) |
+| **Karachi** | Samandar (Sea) |
+| **Islamabad** | Pahari (Hills) |",STOP,2.42,105,2,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B6,B,B,benchmark,"Is email ka jawab likho: 'Sir, kal ki meeting kis waqt hai?' — jawab me waqt poochne ke bajaye meeting ka waqt 11 baje batana hai.",reply stating 11 o'clock,"Yahan aapke liye email ka jawab hai, jismein meeting ka waqt 11 baje bataya gaya hai:
+
+**""Sir, kal ki meeting subah 11 baje hai.""**
+
+Agar aapko ise thoda aur formal ya professional likhna ho, toh yeh use kar sakte hain:
+
+**""Dear Sir,**
+**Kal ki meeting subah 11:00 baje tay shuda (scheduled) hai.""**",STOP,6.25,139,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B6,B,B,real,"is email ka jawab likh do: 'Sir, kal ki meeting kis waqt hai?' meeting 11 baje hai ye bhi bta dena",reply stating 11 o'clock,"Aap yeh jawab bhej sakte hain:
+
+**""Sir, kal ki meeting subah 11 baje hai.""**
+
+Agar aap thoda professional (formal) tareeqe se kehna chahte hain, toh yeh likhein:
+
+**""Hello Sir, kal ki meeting subah 11:00 AM par scheduled hai.""**",STOP,8.02,105,2,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B7,B,B,benchmark,"'Pakistan, India, Bangladesh' — in teeno mulkon ke dar-ul-hukumat likho.","Islamabad, New Delhi, Dhaka","In teeno mulkon ke dar-ul-hukumat (capitals) yeh hain:
+
+1. **Pakistan** ka dar-ul-hukumat **Islamabad** hai.
+2. **India** ka dar-ul-hukumat **New Delhi** hai.
+3. **Bangladesh** ka dar-ul-hukumat **Dhaka** hai.",STOP,49.85,104,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B7,B,B,real,pakistan india bangladesh ke capital btao,"Islamabad, New Delhi, Dhaka","Pakistan, India aur Bangladesh ke capitals (Rajdhani) ye hain:
+
+1. **Pakistan:** Islamabad
+2. **India:** New Delhi
+3. **Bangladesh:** Dhaka",STOP,1.27,46,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B8,B,B,benchmark,"5 cheezon ki shopping list banao, har cheez ki qeemat ke sath, kul qeemat Rs 1,000 se kam ho.","5 items, prices, total < 1000 and correct","Yeh lijiye 5 cheezon ki shopping list jis ki kul qeemat Rs 1,000 se kam hai:
+
+1. **Cheeni (Sugar - 1 kg):** Rs 150
+2. **Chai ki Patti (Tea Bag/Pack - 1 packet):** Rs 250
+3. **Doodh (Milk - 1 Liter Tetra Pack):** Rs 280
+4. **Biscuit (1 Family Pack):** Rs 120
+5. **Anday (Eggs - Half Dozen / 6 pieces):** Rs 160
+
+**Kul Qeemat (Total Price):** Rs 960 (Rs 1,000 se kam)",STOP,10.58,195,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B8,B,B,real,5 cheezon ki list banao qeemat k sath total 1000 se kam ho,"5 items, prices, total < 1000 and correct","Ye rahi 5 cheezon ki list, jinki total qeemat 1,000 rupay se kam hai:
+
+1. **1 Kg Cheeni (Sugar):** Rs. 140
+2. **1 Litre Cooking Oil (Local brand):** Rs. 500
+3. **1 Dozen Anday (Eggs):** Rs. 280
+4. **1 Packet Salt (Namak):** Rs. 40
+5. **1 Choti Chai ki Patti (Tea Packet):** Rs. 30
+
+**Total Qeemat:** 140 + 500 + 280 + 40 + 30 = **Rs. 990**",STOP,5.74,182,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B9,B,B,benchmark,Is jumle ko durust karo: 'Mujhe kal school jana hai aur mera homework bhi karna hai lekin waqt nahi hai.',"corrected sentence, same meaning","Yeh jumla pehle se hi kafi had tak theek hai aur iska mafhoom (meaning) bilkul واضح hai. Lekin isko mazeed behtar aur natural banane ke liye aap in tariko se durust kar sakte hain:
+
+**1. Behtareen aur Rawaan (Fluent) Andaz:**
+> ""Mujhe kal school jana hai aur waqt na hone ki wajah se mera homework bhi baaki hai.""
+
+**2. Thora Formal Andaz:**
+> ""Mujhe kal school jana hai, lekin waqt na hone ki wajah se main apna homework nahi kar paaya/paayi."" *(Agar larkay hain toh ""paaya"" aur larki hain toh ""paayi"" likhein).*
+
+**3. Agar aap usi jumle ko thora sa theek karna chahein:**
+> ""Mujhe kal school jana hai aur **mujhe** apna homework bhi karna hai, lekin waqt nahi hai."" (Yahan ""mujhe"" ka izafa jumle ko mukammal karta hai).",STOP,2.39,246,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B9,B,B,real,is jumle ko theek karo: 'Mujhe kal school jana hai aur mera homework bhi karna hai lekin waqt nahi hai.',"corrected sentence, same meaning","Aapka yeh jumla pehle se hi kaafi had tak theek aur samajh mein aane wala hai, lekin mazeed behtar aur natural banane ke liye aap ise in tareeqon se likh sakte hain:
+
+**1. Behtareen aur aam bolchal ka tareeqa:**
+> ""Mujhe kal school jana hai, mera homework bhi baaki hai, lekin waqt bilkul nahi hai.""
+
+**2. Thoda formal (likhne ke liye):**
+> ""Mujhe kal school jana hai aur apna homework bhi mukammal (complete) karna hai, magar mere paas waqt nahi hai.""
+
+**3. Chhota aur asaan:**
+> ""Mujhe kal school jana hai, par waqt kam hai aur homework abhi rehta hai.""
+
+Aap pehla ya doosra jumla istemal kar sakte hain, yeh dono bilkul durust hain.",STOP,1.75,219,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B10,B,B,benchmark,"Aik chhoti kahani ke 3 hisse likho: shuruaat, darmiyan, ikhtitam — topic: 'aik khoya hua bacha'.","3 parts, one story","Yeh lijiye, aik khoye hue bachche ki choti si kahani 3 hisson mein:
+
+**1. Shuruaat:**
+Mela roshniyon, gubbaron aur logon ki aawazon se ghoonj raha tha. 6 saal ka Ali apnay abba ki ungli pakad kar chal raha tha, jab achanak aik rang-birange ghubraye (balloon) walay ko dekh kar uska dhayan bhatak gaya. Usne palak jhapkane mein abba ka haath chhor diya aur ghubraye ke peechay chal pada. Jab usne mud kar dekha, toh wahan sirf ajnabiyon ka samandar tha—uske abba kahin nahi thay.
+
+**2. Darmiyan:**
+Bheed mein akele reh jane par Ali ka dil zor-zor se dhadakne laga. Usne abba ko har taraf dhoonda, unka naam pukara, par shor mein uski aawaz dab gayi. Ghabrahat ke mare uski aankhon se aansu behne lage aur woh roney laga. Tabhi aik bhalay insan (guard) ne use rote dekha, wo Ali ko fौरan police kiosk par le gaya, jahan mic par announcements ki gayi aur chocolate de kar Ali ko chup karwaya gaya.
+
+**3. Ikhtitam:**
+Kuch hi der mein loudspeaker ki aawaz sun kar Ali ke abba pareshan hal wahan daurte hue aaye. Ali ne jab apne abba ko dekha, toh woh bhag kar unke seene se lag gaya aur zor-zor se rone laga. Abba ne use apni baahon mein kas liya, maano poori duniya ki doulat mil gayi ho. Us din ke baad se Ali ne kabhi miley mein apne abba ka haath nahi chhoda.",STOP,4.53,435,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+B10,B,B,real,aik khoye hue bache par chhoti kahani likho 3 hison me,"3 parts, one story",,,,,,5,attempt 1: HTTPError: HTTP Error 503: Service Unavailable | attempt 2: HTTPError: HTTP Error 503: Service Unavailable | attempt 3: HTTPError: HTTP Error 503: Service Unavailable | attempt 4: HTTPError: HTTP Error 503: Service Unavailable | attempt 5: HTTPError: HTTP Error 503: Service Unavailable,FAILED after 5 attempts,gemini-3.5-flash-lite,1024,0,2026-11-05
+C1,C,C,benchmark,Aik dukaan par 5 kg cheeni Rs 800 ki hai. 1 kg ki qeemat kya hai?,Rs 160,"1 kg cheeni ki qeemat **Rs 160** hogi. 
+
+*(Aisay calculate kiya: 800 ko 5 se divide kiya, tou 160 agaya).*",STOP,1.07,72,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C1,C,C,real,5 kilo cheeni 800 ki hai to 1 kilo kitne ka,Rs 160,"Agar 5 kilo cheeni 800 rupaye ki hai, toh 1 kilo cheeni **160 rupaye** ki hogi. 
+
+(800 ko 5 se divide karne par 160 aata hai).",STOP,2.79,68,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C2,C,C,benchmark,"Agar aik train 60 km/h ki raftar se 3 ghante chale, to kitna fasla tay karegi?",180 km,"Train **180 kilometer (km)** ka fasla tay karegi. 
+
+**Hisab is tarah hai:**
+* Raftar (Speed) = 60 km/h
+* Waqt (Time) = 3 ghante
+
+Fasla (Distance) maloom karne ka formula hai:
+**Fasla = Raftar × Waqt**
+60 × 3 = 180 km",STOP,4.91,118,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C2,C,C,real,train 60 km/h se 3 ghante chale to kitna fasla,180 km,"Agar train 60 km/h ki raftaar (speed) se 3 ghante (hours) chale, toh woh **180 kilometer** ka fasla (distance) tay karegi.
+
+**Hisab (Calculation):**
+Fasla = Raftaar (Speed) $\times$ Waqt (Time)
+Fasla = $60 \text{ km/h} \times 3 \text{ hours} = 180 \text{ km}$",STOP,4.0,121,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C3,C,C,benchmark,1000 me se 37% nikal kar baqi kitna bachta hai?,630,"1000 me se 37% nikalne ke baad **630** bachta hai.
+
+**Hisab is tarah hai:**
+* 1000 ka 37% = 370 hota hai.
+* Jab aap 1000 me se 370 minus (minus) karte hain, toh 630 bachta hai.",STOP,2.71,105,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C3,C,C,real,1000 ka 37% nikal k btao kitna bacha,630,"1000 ka 37% **370** hota hai. 
+
+Jab aap 1000 mein se 370 ghata (minus) denge, toh **630** bachega.
+
+**Hisab is tarah hai:**
+* 1000 ka 37% = $1000 \times \frac{37}{100} = 370$
+* Kitna bacha = $1000 - 370 = \mathbf{630}$",STOP,2.44,138,2,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C4,C,C,benchmark,Aik kamra 12 foot lamba aur 10 foot chaura hai. Us ka raqba kitna hai?,120 sq ft,"Is kamray ka raqba (area) **120 square feet (murabba foot)** hai.
+
+**Hisab (Calculation):**
+Raqba maloom karne ke liye lambaai (length) ko chauraai (width) se zarb (multiply) kiya jata hai:
+12 feet × 10 feet = 120 square feet.",STOP,0.94,107,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C4,C,C,real,kamra 12 foot lamba 10 foot chaura hai raqba kitna,120 sq ft,"Kamray ka raqba (area) **120 square feet (murabba foot)** hoga.
+
+Iska hisaab is tarah kiya jata hai:
+* Lambai = 12 foot
+* Chauraai = 10 foot
+* Lambai × Chauraai = 12 × 10 = **120 Square Feet**
+
+Agar aapko isko **Gaj (Square Yards)** mein nikalna ho, toh 120 ko 9 se taqseem (divide) kar dein, jo ke lagbhag **13.33 Gaj** banta hai.",STOP,1.22,152,1,3,attempt 1: HTTPError: HTTP Error 503: Service Unavailable | attempt 2: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C5,C,C,benchmark,"2, 4, 8, 16, agla number kya hoga?",32,"Agla number **32** hoga. 
+
+Kyunki is series mein har number ko 2 se multiply kiya ja raha hai (Power of 2):
+* 2 × 2 = 4
+* 4 × 2 = 8
+* 8 × 2 = 16
+* 16 × 2 = **32**",STOP,7.25,96,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C5,C,C,real,2 4 8 16 agla kya hoga,32,"Agla number **32** hoga. 
+
+**Kyunki:**
+Yeh 2 ka table (powers of 2) hai, jisme har pichle number ko 2 se multiply kiya ja raha hai:
+* 2 × 2 = 4
+* 4 × 2 = 8
+* 8 × 2 = 16
+* 16 × 2 = **32**",STOP,1.39,103,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C6,C,C,benchmark,"Aik aadmi ki tankhwa Rs 50,000 hai. Woh 30% kharch karta hai. Kitne bachte hain?","Rs 35,000","Us aadmi ke paas **Rs 35,000** bachte hain. 
+
+**Hisab is tarah hai:**
+* Kul tankhwa = Rs 50,000
+* Kharcha (30%) = Rs 15,000 (50,000 ka 30%)
+* Bachat = 50,000 - 15,000 = **Rs 35,000**",STOP,3.24,136,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C6,C,C,real,tankhwa 50000 hai 30% kharcha to kitne bache,"Rs 35,000","Agar aapki tankhwa (salary) 50,000 hai aur aap 30% kharch kar dete hain, toh aapke paas **35,000 rupaye** bachenge.
+
+**Hisab is tarah hai:**
+* Total Tankhwa = ₹50,000
+* Kharcha (30%) = ₹15,000 (50,000 ka 30%)
+* Bache hue paise = ₹50,000 - ₹15,000 = **₹35,000**",STOP,1.31,148,1,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C7,C,C,benchmark,9:30 par nikalne wali bus 45 minute late hai. Woh kab niklegi?,10:15,"Woh bus **10:15** par niklegi. 
+
+(9:30 mein 45 minute jodney par 10:15 bajte hain.)",STOP,0.9,60,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C7,C,C,real,bus 9:30 pe thi 45 mint late hai kab niklegi,10:15,"Bus 9:30 par thi aur 45 minute late hai, toh bus **10:15 (Dusra baj kar pandrah minute) AM/PM** par niklegi.",STOP,1.05,58,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C8,C,C,benchmark,3 doston ne Rs 900 barabar taqseem kiye. Har aik ko kitne mile?,Rs 300,"Har aik dost ko **Rs 300** milenge. 
+
+(900 ko 3 par taqseem / divide karne se 300 aata hai).",STOP,2.01,62,1,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C8,C,C,real,900 rupay 3 doston me barabar banto har aik ko kitne,Rs 300,"900 रुपये को 3 दोस्तों में बराबर बांटने पर हर एक को **300 रुपये** मिलेंगे। 
+
+(900 ÷ 3 = 300)",STOP,1.68,58,1,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C9,C,C,benchmark,Aik rectangle ki lambai 8 aur chaurai 5 hai. Us ka perimeter kitna hai?,26,"Rectangle ka perimeter (mohata) maloom karne ka formula yeh hai:
+
+**Perimeter = 2 × (Lambai + Chaurai)**
+
+Yahan:
+* Lambai (Length) = 8
+* Chaurai (Width) = 5
+
+Formula mein values put karne par:
+* Perimeter = 2 × (8 + 5)
+* Perimeter = 2 × 13
+* **Perimeter = 26**
+
+Is rectangle ka perimeter **26** hai.",STOP,1.21,130,1,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C9,C,C,real,rectangle 8 by 5 hai perimeter kitna,26,"Rectangle (ayat) ka perimeter (ghera) nikalne ka formula yeh hai:
+
+**Perimeter = 2 × (Length + Breadth)**
+
+Yahan:
+* Length = 8
+* Breadth = 5
+
+Formula mein value daalte hain:
+Perimeter = 2 × (8 + 5)
+Perimeter = 2 × 13
+Perimeter = **26**
+
+Toh rectangle ka perimeter **26** hoga.",STOP,2.15,110,2,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C10,C,C,benchmark,"Agar aaj Jumma hai, to 10 din baad kaunsa din hoga?",Monday (Peer),"Agar aaj Jumma (Friday) hai, toh **10 din baad Itwaar (Sunday) hoga**.
+
+Hisaab is tarah hai:
+* Jumma se 7 din baad phir se Jumma hi hoga.
+* Agle 3 din aur jod lein (Saturday, Sunday, Monday... oh wait, let's recount properly):
+
+1. Pehla din: Sanichar (Saturday)
+2. Doosra din: Itwaar (Sunday)
+3. Teesra din: Peer (Monday)
+4. Chautha din: Mangal (Tuesday)
+5. Paanchwan din: Budh (Wednesday)
+6. Chhatha din: Jumerat (Thursday)
+7. Saatwan din: Jumma (Friday)
+8. Aathwan din: Sanichar (Saturday)
+9. Nawain din: **Itwaar (Sunday)** -> Yeh hua 9 din baad.
+10. Dusra din: **Peer (Monday)** -> Yeh hua 10 din baad.
+
+**Sahi Jawab:** 10 din baad **Peer (Monday)** hoga. 
+
+*(Agar aapka matlab ye hai ke aaj se 10 din aage kaunsa din aayega, toh woh Peer hoga).*",STOP,2.93,284,2,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+C10,C,C,real,aj juma hai 10 din bad konsa din hoga,Monday (Peer),"Agar aaj **Juma (Friday)** hai, toh theek **10 din baad** **Itwar (Sunday)** hoga.
+
+**Hisab is tarah hai:**
+* 7 din baad wapas Juma hoga.
+* Agle 3 din aur jorney par:
+  * 8wein din: Hafsa (Saturday)
+  * 9wein din: Itwar (Sunday)
+  * 10wein din: Peer (Monday)... *Wait, let's recalculate carefully!*
+
+Chaliye din ginte hain:
+* Aaj = Juma (0 din baad)
+* 1 din baad = Hafsa (Saturday)
+* 2 din baad = Itwar (Sunday)
+* 3 din baad = Peer (Monday)
+* 4 din baad = Mangal (Tuesday)
+* 5 din baad = Budh (Wednesday)
+* 6 din baad = Jumerat (Thursday)
+* 7 din baad = Juma (Friday)
+* 8 din baad = Hafsa (Saturday)
+* **9 din baad = Itwar (Sunday)**
+* **10 din baad = Peer (Monday)**
+
+Sahi jawab yeh hai: **10 din baad ""Peer"" (Monday) hoga.** 
+*(Maine pehle Itwar kaha tha, wo 9 din baad banta hai).*",STOP,1.93,303,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D1,D,D,benchmark,"Pehle 5 Pakistani shehron ke naam likho, phir un me se har aik ka aik mashhoor khana likho, phir poori list ko aik table me do.",5 cities + 5 foods in table,"Yai hain pehle 5 Pakistani shehron ke naam aur un ke mashhoor khanay:
+
+1. **Lahore** - Siri Paye
+2. **Karachi** - Biryani
+3. **Peshawar** - Chapli Kabab
+4. **Quetta** - Sajji
+5. **Multan** - Sohan Halwa
+
+Ab is poori list ko aik table ki shakal me dekhiye:
+
+| Shahr (City) | Mashhoor Khana (Famous Food) |
+| :--- | :--- |
+| Lahore | Siri Paye |
+| Karachi | Biryani |
+| Peshawar | Chapli Kabab |
+| Quetta | Sajji |
+| Multan | Sohan Halwa |",STOP,2.08,202,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D1,D,D,real,yr pehle 5 pakistani shehron k naam likho phir har aik ka mashhoor khana phir table me do,5 cities + 5 foods in table,"Yeh lijiye Pakistan ke 5 mashhoor shehron aur unke khas khano ki maloomat, pehle fehrist (list) ki shakal mein aur phir table mein:
+
+**5 Pakistani Shehar aur unke Mashhoor Khane:**
+
+1. **Lahore** - Siri Paye aur Nihari
+2. **Karachi** - Biryani
+3. **Peshawar** - Chapli Kebab
+4. **Hyderabad** - Pulao
+5. **Multan** - Sohan Halwa
+
+---
+
+**Table:**
+
+| Shumar (No.) | Shehar ka Naam | Mashhoor Khana |
+| :--- | :--- | :--- |
+| 1. | Lahore | Siri Paye / Nihari |
+| 2. | Karachi | Biryani |
+| 3. | Peshawar | Chapli Kebab |
+| 4. | Hyderabad | Pulao |
+| 5. | Multan | Sohan Halwa |",STOP,5.92,244,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D2,D,D,benchmark,"Aik YouTube video ke liye 3 title options do, phir un me se behtareen chuno aur batayein kyun behtareen hai.",3 titles + choice + reason,,,,,,5,attempt 1: HTTPError: HTTP Error 503: Service Unavailable | attempt 2: HTTPError: HTTP Error 503: Service Unavailable | attempt 3: HTTPError: HTTP Error 503: Service Unavailable | attempt 4: HTTPError: HTTP Error 503: Service Unavailable | attempt 5: HTTPError: HTTP Error 503: Service Unavailable,FAILED after 5 attempts,gemini-3.5-flash-lite,1024,0,2026-11-05
+D2,D,D,real,youtube video k liye 3 title do phir behtareen chuno aur btao kyun,3 titles + choice + reason,"YouTube video ke liye title dene se pehle, mujhe yeh janna zaroori hai ki **aapki video ka topic kya hai?** (Jaise: Vlogs, Cooking, Tech, Comedy, ya Education). 
+
+Lekin, aapko samjhane ke liye main ek **example (Udaharan)** le raha hoon—maan lijiye aapki video **""Pehli YouTube Video Kaise Banaye""** par hai. 
+
+Is topic ke liye 3 titles ye ho sakte hain:
+
+### 3 Titles (Example):
+1. **YouTube Video Kaise Banaye (2024)** - *Simple aur Seedha*
+2. **Pehli YouTube Video Aise Banao! (Step-by-Step Guide)** - *Exciting aur Helpful*
+3. **Sirf 1 Phone se Professional YouTube Video Kaise Banaye?** - *Curiosity aur Problem-Solving*
+
+---
+
+### Inmein se Behtareen Title Kaunsa hai?
+Mere mutabiq, **Title #3 (""Sirf 1 Phone se Professional YouTube Video Kaise Banaye?"")** sabse behtareen hai.
+
+### Kyun? (Reason):
+1. **Target Audience ki Problem solve karta hai:** Bahut se naye creators ke paas expensive cameras nahi hote. ""Sirf 1 phone se"" sunkar unhe lagta hai ki yeh video unhi ke liye hai.
+2. **Curiosity & Value:** ""Professional"" shabd use karne se logon ke andar yeh curiosity jagti hai ki phone se professional quality kaise laayein.
+3. **Clickable (High CTR):** Yeh title aam titles se thoda alag aur attractive hai, jisse log video par click karne par majboor ho jaate hain.
+
+---
+
+**Aapki video ka topic kya hai?** Aap mujhe batayein, main aapko aapki video ke liye 3 behtareen titles aur unme se best chun kar bata deta hoon!",STOP,2.95,439,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D3,D,D,benchmark,"Meri dukaan ke liye aik din ka schedule banao: subah 9 se shaam 6 tak, har ghante ka kaam likho.","9 hours, each with a task",,,,,,5,attempt 1: HTTPError: HTTP Error 503: Service Unavailable | attempt 2: HTTPError: HTTP Error 503: Service Unavailable | attempt 3: HTTPError: HTTP Error 503: Service Unavailable | attempt 4: HTTPError: HTTP Error 503: Service Unavailable | attempt 5: HTTPError: HTTP Error 503: Service Unavailable,FAILED after 5 attempts,gemini-3.5-flash-lite,1024,0,2026-11-05
+D3,D,D,real,dukan k liye aik din ka schedule banao subah 9 se shaam 6 har ghante ka kaam,"9 hours, each with a task",,,,,,5,attempt 1: HTTPError: HTTP Error 503: Service Unavailable | attempt 2: HTTPError: HTTP Error 503: Service Unavailable | attempt 3: HTTPError: HTTP Error 503: Service Unavailable | attempt 4: HTTPError: HTTP Error 503: Service Unavailable | attempt 5: HTTPError: HTTP Error 503: Service Unavailable,FAILED after 5 attempts,gemini-3.5-flash-lite,1024,0,2026-11-05
+D4,D,D,benchmark,"Is kahani ko parho: 'Ali ne aik kitab khareedi.' Phir is ka khulasa likho, phir is par aik sawal banao, phir us sawal ka jawab likho.",summary + question + answer,"Yahan aap ki di gayi kahani ka khulasa, sawal aur jawab hai:
+
+**Kahani:** ""Ali ne aik kitab khareedi.""
+
+**Khulasa:**
+Is choti si kahani mein yeh bataya gaya hai ke Ali naam ke aik larke ne parhne ya istamal ke liye aik kitab purchase ki (khareedi). 
+
+**Sawal:**
+Ali ne kya khareeda?
+
+**Jawab:**
+Ali ne aik kitab khareedi.",STOP,1.19,148,1,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D4,D,D,real,is kahani ko parho: 'Ali ne aik kitab khareedi.' phir khulasa likho phir sawal banao phir jawab likho,summary + question + answer,"Yeh raha aap ka matlooba kaam:
+
+### **Kahani:**
+""Ali ne aik kitab khareedi.""
+
+---
+
+### **Khulasa (Summary):**
+Is choti si kahani ka khulasa yeh hai ke Ali naam ke aik shakhs ne parhne ya istemal karne ke liye aik kitab purchase (khareedi) ki.
+
+---
+
+### **Sawal (Question):**
+Ali ne kya khareeda?
+
+---
+
+### **Jawab (Answer):**
+Ali ne aik kitab khareedi.",STOP,1.35,147,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D5,D,D,benchmark,"Aik budget banao: mahina Rs 40,000, kiraya Rs 12,000, khana Rs 10,000, baqi bachat — kul hisab durust ho.","rent+food+balance Rs 18,000",,,,,,5,attempt 1: HTTPError: HTTP Error 503: Service Unavailable | attempt 2: HTTPError: HTTP Error 503: Service Unavailable | attempt 3: HTTPError: HTTP Error 503: Service Unavailable | attempt 4: HTTPError: HTTP Error 503: Service Unavailable | attempt 5: HTTPError: HTTP Error 503: Service Unavailable,FAILED after 5 attempts,gemini-3.5-flash-lite,1024,0,2026-11-05
+D5,D,D,real,budget banao mahina 40000 kiraya 12000 khana 10000 baqi bachat hisab durust ho,"rent+food+balance Rs 18,000","Aapki monthly income **₹40,000** hai aur aapke main kharchay **₹22,000** (Kiraya + Khana) hain. Yeh ek bohot hi acchi position hai kyunki aap apni income ka ek bada hissa bacha sakte hain. 
+
+Aapka hisab bilkul durust aur balanced rakhne ke liye maine yeh **50/30/20 Budget Rule** ke mutabiq budget banaya hai:
+
+### 📊 Monthly Budget Breakdown (₹40,000)
+
+| Category | Amount | Percentage | Description |
+| :--- | :--- | :--- | :--- |
+| **1. Fixed Expenses (Zaroori Kharchay)** | **₹22,000** | 55% | Aapke bataye hue main kharchay |
+| - Kiraya (Rent) | ₹12,000 | 30% | Ghar ka kiraya, bijli/pani bill isme adjust karein |
+| - Khana (Groceries/Food) | ₹10,000 | 25% | Ration, sabzi, doodh, aur agar bahar khana ho |
+| **2. Variable Expenses (Dusre Zaroori Kharchay)**| **₹8,000** | 20% | Rozmarra ke chote-mote kharchay |
+| - Transport / Fuel | ₹3,000 | - | Aana-jaana, petrol/diesel, public transport |
+| - Mobile / Internet / Bills | ₹1,000 | - | Recharge aur wifi |
+| - Medical / Miscellaneous | ₹4,000 | - | Dawayi, emergency ya personal use |
+| **3. Savings & Investments (Bachat)** | **₹10,000** | 25% | **Yeh aapki pakki bachat hai** |
+| - Emergency Fund | ₹5,000 | - | Bank account ya cash me safe rakhein |
+| - Future Savings / FD / Gold | ₹5,000 | - | Long-term growth ke liye invest karein |
+| **Total** | **₹40,000** | **100%** | **Hisab Barabar (Zero-Based Budget)** |
+
+---
+
+### 💡 Hisab Durust Rakhne ke 4 Golden Rules:
+
+1. **Salary aate hi Bachat (Savings) alag karein:** 
+   Mahine ki shuruwat me hi ₹10,000 nikal kar savings ya investment me daal dein. Baki ke ₹30,000 me hi poora mahina chalane ki koshish karein. Agar paise pehle hi bacha lenge, toh kharch kam honge.
+2. **Khane ka Budget (₹10,000) Track Karein:**
+   ₹10,000 khane ke liye kaafi hain agar aap ghar ka khana khate hain. Bahar ka khana (Restaurants/Zomato) ishi budget me se manage karna hoga taaki ₹10,000 se upar na jaye.
+3. **Emergency Fund:**
+   ₹5,000 har mahine alag rakhna shuru karein taaki kisi bhi mushkil waqt me kisi se udhaar na lena pade.
+4. **Roz ka Hisab:**
+   Ek choti si diary ya mobile app me apne daily kharchay note karein, taaki mahine ke end me andaza rahe ke paise kahan gaye.
+
+Is budget se aapke **₹12,000 kiraya aur ₹10,000 khana** bhi nikal jayenge aur har mahine **₹10,000 ki bachat** bhi ho jayegi!",STOP,5.05,878,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D6,D,D,benchmark,"Aik meeting ka agenda banao (3 points), phir har point par 2 jumle likho, phir meeting ka waqt aur jagah likho.",agenda 3 points + detail + time/place,"**Meeting ka Agenda:**
+
+1. **Naye Project ki Shuruaat (Project Kickoff)**
+   * Is meeting mein hum aane wale naye project ke maqsad aur uski planning par tafseel se baat karenge. 
+   * Sabhi team members ko unki zimmedariyan aur deadlines assign ki jayengi taake kaam waqt par shuru ho sake.
+
+2. **Pichle Mahine ki Karkardagi ka Jaiza (Monthly Performance Review)**
+   * Pichle mahine ke targets ka mukammal jaiza liya jayega aur dekha jayega ke humne kya hasil kiya.
+   * Jo chote-mote masail ya rukawatein aayi thin, unhein hal karne ke liye naye tareeqay soche jayenge.
+
+3. **Aane wale Mahine ki Hikmat-e-Amli (Future Strategy for Next Month)**
+   * Aane wale mahine ke liye naye goals set kiye jayenge aur unhe achieve karne ke liye plan banaya jayega.
+   * Is doran naye ideas par bhi bahas hogi taake hamari productivity mazeed behtar ho sake.
+
+---
+
+**Meeting ka Waqt aur Jagah:**
+
+* **Waqt (Time):** Subah 11:00 bajey se 12:00 bajey tak (Peer, 20 May 2024)
+* **Jagah (Venue):** Head Office, Conference Room (Floor #3)",STOP,2.67,355,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D6,D,D,real,meeting ka agenda banao 3 points phir har point pe 2 jumle phir waqt aur jagah likho,agenda 3 points + detail + time/place,"Yeh lijiye aapki meeting ka agenda:
+
+**Meeting ka Agenda:**
+
+1. **Naye Project ki Shuruwat:**
+   - Hum aane wale naye project ke maqsad aur uski timeline par tafseel se baat karenge.
+   - Team ke har fard ko unki zimmedariyan (roles) wazeh taur par samjhayi jayengi.
+
+2. **Karkardagi (Performance) ka Jaiza:**
+   - Pichle mahine ke kaam ka mukammal jaiza liya jayega taake ghaltiyon se seekha ja sake.
+   - Behtari ke liye nayi hikmat-e-amli (strategies) par aapas mein mashwarah kiya jayega.
+
+3. **Budget aur Resources ki Takseem:**
+   - Aane wale kaam ke liye zaroori budget aur resource allocation par fori faisla hoga.
+   - Kharchon ko kam karne aur behtareen nataij haasil karne ke tareeqon par ghaur hoga.
+
+* **Waqt (Time):** Subah 11:00 baje 
+* **Jagah (Venue):** Conference Room B",STOP,2.8,278,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D7,D,D,benchmark,"Aik product ki description likho (50 alfaaz), phir us ke 3 fayde likho, phir us ki qeemat Rs 500 likho.",~50-word description + 3 benefits + Rs 500,"**Product Description:**
+Ye khoobsurat aur stylish smartwatch aap ki rozmarra ki zaroorat ko poora karti hai. Is ka modern design aur comfortable strap aap ko deta hai aik behtareen aur smart look. Fitness tracking ke sath sath yeh aap ko notifications bhi deti hai, jo aap ki life ko asaan banati hai.
+
+**3 Fayde:**
+1. **Fitness Tracking:** Aap ki daily steps aur health ko asani se track karti hai.
+2. **Stylish Look:** Har tarah ke libaas (outfit) ke sath zabardast lagti hai.
+3. **Easy Notifications:** Phone nikalne ki zaroorat ke baghair calls aur messages check karein.
+
+**Qeemat:**
+Rs 500",STOP,2.08,199,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D7,D,D,real,product ki description likho 50 lafz phir 3 fayde phir qeemat 500 likho,~50-word description + 3 benefits + Rs 500,"**Product Description:**
+Ye aik behtareen aur lajawab product hai jo ap ki rozमर्रा ki zindagi ko asaan aur pur-sukoon banata hai. Is ka modern design aur high-quality material isay mazeed qabil-e-bharosa banata hai. Iska istemal bohat aasan hai aur ye lambay arsay tak apka sath nibhayega. Apni zaroorat ko poora karne ke liye yeh aik behtareen intekhab hai.
+
+**3 Fayde:**
+1. Aala quality aur mazboot material jo lambay arsay tak chalay.
+2. Istemal karne mein behad asaan aur halka phulka.
+3. Behtareen karkardagi ke sath waqt ki bachat.
+
+**Qeemat:**
+Rs. 500",STOP,3.63,203,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D8,D,D,benchmark,"Pehle aik sawal ka jawab do: 'Chand par pehla qadam kisne rakha?' Phir us ke baare me 2 jumle aur likho, phir is maloomat ka source batao.",Neil Armstrong + 2 sentences + source,"**Sawalay ka jawab:**
+Chand par pehla qadam **Neil Armstrong** (Neil Armstrong) ne rakha tha.
+
+**2 mazeed jumle:**
+1. Neil Armstrong ne 20 July 1969 ko Apollo 11 mission ke douran chand ki satah par utar kar yeh tareekhi karنامہ anjam diya tha.
+2. Is moqa par un ke sath doosray khala baaz (astronaut) Buzz Aldrin bhi chand par utray thay.
+
+**Source (Zariya):**
+Yeh maloomat NASA (National Aeronautics and Space Administration) ki official tareekhi dastavez aur American space program ke records par mabni hai.",STOP,3.54,192,2,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D8,D,D,real,chand par pehla qadam kisne rakha phir us pe 2 jumle aur likho phir source btao,Neil Armstrong + 2 sentences + source,"**Chand par pehla qadam kisne rakha:**
+
+Chand par pehla qadam American khala-baaz (astronaut) **Neil Armstrong** ne rakha tha.
+
+**Us par 2 jumle:**
+1. Neil Armstrong 21 July 1969 ko Apollo 11 مشن (mission) ke zariye chand par utray thay.
+2. Us waqt unhon ne chand ki zameen par qadam rakhtay hue kaha tha, *""Yeh aik insaan ke liye chhota sa qadam hai, lekin insaniyat ke liye aik buhat bara qadam hai.""*
+
+**Source (Zariya):**
+Yeh waqya **NASA (National Aeronautics and Space Administration)** ki tareekhi dastawaizat aur American khalaee tareekh (American Space History) ka aik musaddaqah (verified) record hai.",STOP,2.85,209,2,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D9,D,D,benchmark,"Aik hafte ka khana plan banao (7 din), har din aik khana, phir un khanon ki aik shopping list banao.",7 days + shopping list,"Yeh lijiye aapke 7 din ka mazedaar aur asaan khane ka plan (Haftawar Khana Plan), aur uske sath hi zaroori cheezon ki shopping list! 
+
+### **7 Din Ka Khana Plan (Weekly Meal Plan)**
+
+* **Peer (Monday):** **Aloo Gosht aur Roti** *(Ghar ka bana hua lazeez salan)*
+* **Mangal (Tuesday):** **Daal Chawal aur Salad** *(Halka phulka aur roziyna ka pasandeeda)*
+* **Budh (Wednesday):** **Chicken Biryani ya Pulao** *(Hafte ke beech mein kuch khaas)*
+* **Jumerat (Thursday):** **Aloo Palak aur Roti** *(Sabzi jo sehat ke liye achi ho)*
+* **Jumma (Friday):** **Anda Curry aur Roti/Chawal** *(Jummah ki waja se jhat pat banne wala khana)*
+* **Hafta (Saturday):** **Macaroni ya Pasta** *(Weekend special, bachon aur baro dono ka favourite)*
+* **Itwar (Sunday):** **Chicken Karahi aur Naan** *(Itwar ki dawat ya family dinner)*
+
+---
+
+### **Shopping List (Bazaar ki List)**
+
+Yeh list upar diye gaye khano ke hisab se banayi gayi hai:
+
+#### **Gosht / Poultry (Meat):**
+* [ ] Gosht (Beef/Mutton) – Aloo Gosht ke liye (approx. 500g)
+* [ ] Chicken – Biryani aur Karahi ke liye (approx. 1.5 kg)
+* [ ] Anday (Eggs) – 1 darjan (Anda Curry ke liye)
+
+#### **Sabziyan aur Phal (Vegetables & Fruits):**
+* [ ] Aloo (Potatoes) – 2 kg
+* [ ] Palak (Spinach) – 1 gatthi
+* [ ] Pyaz (Onions) – 2 kg
+* [ ] Tamatar (Tomatoes) – 1.5 kg
+* [ ] Hari Mirch, Adrak, aur Lehsan (Green Chilies, Ginger, Garlic)
+* [ ] Nimbu (Lemons) aur Salad ka saman (Kheera, Gajar, Mooli)
+
+#### **Grocery aur Dry Items:**
+* [ ] Chawal (Rice) – 1.5 kg (Daal Chawal aur Biryani ke liye)
+* [ ] Atta (Flour) – Rotiyon ke liye
+* [ ] Daal (Masoor ya Moong) – 1 pau
+* [ ] Cooking Oil ya Ghee – 1 liter/packet
+* [ ] Macaroni / Pasta – 1 packet
+* [ ] Dahi (Yogurt) – 1 kg (Biryani aur Raitay ke liye)
+
+#### **Masalay (Spices):**
+* [ ] Namak (Salt), Lal Mirch powder, Haldi (Turmeric)
+* [ ] Sukha Dhania powder, Garam Masala
+* [ ] Biryani Masala – 1 packet
+
+*Note: Aap apni pasand aur ghar ke afraad ke hisab sequantity kam ya zyada kar sakte hain.*",STOP,3.8,735,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D9,D,D,real,aik hafte ka khana plan banao 7 din har din aik khana phir shopping list banao,7 days + shopping list,"Yeh lijiye! 7 din ka asan, mazedaar aur sehatmand khane ka plan (Dinner/Main meals) aur sath hi uski grocery shopping list. 
+
+### **7 Din ka Khana Plan (Weekly Meal Plan)**
+
+*   **Pehla Din (Monday):** Chicken Biryani (Raitay ke sath)
+*   **Dusra Din (Tuesday):** Daal Mash aur Garam Garam Roti (Salad ke sath)
+*   **Teesra Din (Wednesday):** Aloo Gosht aur Chawal
+*   **Chautha Din (Thursday):** Chicken Karahi aur Naan
+*   **Panchwan Din (Friday):** Sabzi Mix (Aloo, Gajar, Matar) aur Roti
+*   **Chhatha Din (Saturday):** Anda Curry aur Boiled Rice
+*   **Satwan Din (Sunday):** Chicken Pulao aur Shami Kabab
+
+---
+
+### **Grocery Shopping List (Khareedari ki Fehrist)**
+
+Is list ko aap apni zaroorat ke mutabiq kam ya zyada kar sakte hain (Yeh 2-4 logon ki family ke liye kafi hai):
+
+#### **1. Gosht aur Anda (Meat & Eggs)**
+*   Chicken: 2.5 kg (Biryani, Karahi aur Pulao ke liye)
+*   Beef ya Mutton: 1 kg (Aloo Gosht ke liye)
+*   Anda (Eggs): 1 darjan (Anda Curry ke liye)
+*   Shami Kabab: 1 packet (ya ghar ke banay hue)
+
+#### **2. Sabziyan aur Phal (Vegetables & Fruits)**
+*   Piyaz (Onions): 3 kg
+*   Tamatar (Tomatoes): 2 kg
+*   Lhsan (Garlic) aur Adrak (Ginger): 250g total
+*   Hari Mirch (Green Chillies): 250g
+*   Aloo (Potatoes): 3 kg
+*   Matar (Peas): 500g
+*   Gajar (Carrots): 500g
+*   Mix Sabzi (Mausam ke mutabiq): 1 kg
+*   Lemon aur Hara Dhania/Pudeena: Chand gatthiyan
+
+#### **3. Anaj aur Dalain (Grains & Lentils)**
+*   Basmati Chawal (Rice): 3 kg
+*   Aatta (Flour): 1 chota bag (Roti ke liye)
+*   Daal Mash: 500g
+
+#### **4. Masale aur Oil (Spices & Cooking Oil)**
+*   Cooking Oil ya Ghee: 1.5 Liter / Pouch
+*   Namak (Salt): 1 packet
+*   Surkh Mirch Powder (Red Chilli): 1 packet
+*   Haldi Powder (Turmeric): 1 packet
+*   Sukha Dhania Powder: 1 packet
+*   Garam Masala Powder: 1 packet
+*   Biryani Masala: 1 packet
+
+#### **5. Dairy aur Deegar (Dairy & Others)**
+*   Dahi (Yogurt): 1 kg (Biryani aur Raitay ke liye)
+*   Roti/Naan: Agar ghar par nahi banani toh baker se lenge.",STOP,3.01,752,1,2,attempt 1: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D10,D,D,benchmark,"Aik chhota sa code likho jo 1 se 10 tak ke numbers print kare, phir batayein ke code kya karta hai, phir is me aik tabdeeli batayein jo numbers ko ulta print kare.",code + explanation + reverse change,"Yeh lijiye Python mein 1 se 10 tak numbers print karne ka chhota sa code:
+
+### Python Code:
+```python
+for i in range(1, 11):
+    print(i)
+```
+
+---
+
+### Code kya karta hai?
+1. **`for i in range(1, 11)`**: Yeh loop (loop) 1 se shuru hota hai aur 10 tak chalta hai (Python mein `range` ka aakhri number shamil nahi hota, is liye hum ne `11` likha hai taake 10 tak print ho).
+2. **`print(i)`**: Yeh line har dafa `i` ki current value ko screen par print karti hai.
+
+---
+
+### Code mein Tabdeeli (Numbers ko ulta print karna - 10 se 1):
+Agar aap chahte hain ke numbers 10 se 1 ki taraf (ulta) print hon, toh aap `range` ke andar step mein `-1` ka izafa kar sakte hain. 
+
+Tabdeeli wala code yeh hoga:
+
+```python
+for i in range(10, 0, -1):
+    print(i)
+```
+
+**Is tabdeeli mein kya hua?**
+* Shuruat **10** se hui.
+* Khtam **0** se theek pehle (yani 1 par) hona tha.
+* `-1` ka matlab hai ke har step mein number aik kam hota jaye ga (10, 9, 8... 1).",STOP,62.89,386,1,1,,,gemini-3.5-flash-lite,1024,0,2026-11-05
+D10,D,D,real,chhota sa code likho jo 1 se 10 tak numbers print kare phir btao code kya karta hai phir tabdeeli btao jo ulta print kare,code + explanation + reverse change,"Yeh raha Python mein chhota sa code jo 1 se 10 tak numbers print karta hai:
+
+### Code:
+```python
+for i in range(1, 11):
+    print(i)
+```
+
+---
+
+### Code kya karta hai:
+1. **`for i in range(1, 11)`**: Yeh aik loop chalata hai jo number 1 se shuru hota hai aur 10 tak jata hai (yaad rakhein ke `range` mein akhri number shamil nahi hota, isliye `11` likha gaya hai taake 10 tak print ho).
+2. **`print(i)`**: Yeh loop ke har step par `i` ki current value ko screen par print kar deta hai.
+
+---
+
+### Ulta print karne ke liye tabdeeli (Reverse):
+Agar aap chahte hain ke code 10 se 1 tak ulta (reverse) print kare, toh aapko `range` ke andar shuruat, ant (end), aur step (decrement) batana hoga. 
+
+Tabdeeli wala code yeh hai:
+
+```python
+for i in range(10, 0, -1):
+    print(i)
+```
+
+**Isme kya badlaa (change) kiya gaya?**
+* Shuruat `10` se ki gayi hai.
+* Akhri had `0` rakhi gayi hai (taake 1 tak print ho sake).
+* `-1` yeh batata hai ke har step mein aik number kam (minus) karna hai.",STOP,2.82,371,1,3,attempt 1: HTTPError: HTTP Error 503: Service Unavailable | attempt 2: HTTPError: HTTP Error 503: Service Unavailable,,gemini-3.5-flash-lite,1024,0,2026-11-05

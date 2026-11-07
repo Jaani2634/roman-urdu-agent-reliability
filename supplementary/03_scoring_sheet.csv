@@ -1,0 +1,81 @@
+task_id,condition,category_analysis,score,scoring_method,grading_note
+A1,benchmark,A,1,auto word-boundary match,auto word-boundary match
+A1,real,A,1,auto word-boundary match,auto word-boundary match
+A2,benchmark,C,1,auto word-boundary match,auto word-boundary match
+A2,real,C,1,auto word-boundary match,auto word-boundary match
+A3,benchmark,A,1,auto word-boundary match,auto word-boundary match
+A3,real,A,1,auto word-boundary match,auto word-boundary match
+A4,benchmark,A,0,auto word-boundary match,auto word-boundary match
+A4,real,A,0,auto word-boundary match,auto word-boundary match
+A5,benchmark,A,1,auto word-boundary match,auto word-boundary match
+A5,real,A,0,auto word-boundary match,auto word-boundary match
+A6,benchmark,C,1,auto word-boundary match,auto word-boundary match
+A6,real,C,1,auto word-boundary match,auto word-boundary match
+A7,benchmark,A,1,auto word-boundary match,auto word-boundary match
+A7,real,A,1,auto word-boundary match,auto word-boundary match
+A8,benchmark,C,1,auto word-boundary match,auto word-boundary match
+A8,real,C,1,auto word-boundary match,auto word-boundary match
+A9,benchmark,A,1,auto word-boundary match,auto word-boundary match
+A9,real,A,1,auto word-boundary match,auto word-boundary match
+A10,benchmark,C,1,auto word-boundary match,auto word-boundary match
+A10,real,C,1,auto word-boundary match,auto word-boundary match
+B1,benchmark,B,1,manual grading against rubric,"correct order Ali, Bilal, Sana, Usman, Zara"
+B1,real,B,1,manual grading against rubric,correct order
+B2,benchmark,B,0,manual grading against rubric,summary omits the village (gaon); rubric requires village+old man+field+stories
+B2,real,B,1,manual grading against rubric,"village, old man, field and stories all present"
+B3,benchmark,B,1,manual grading against rubric,"7, 19, 42, 56, 103 correct"
+B3,real,B,1,manual grading against rubric,"7, 19, 42, 56, 103 correct"
+B4,benchmark,B,1,manual grading against rubric,"first said 12, then self-corrected to 13; final answer 13 correct"
+B4,real,B,0,manual grading against rubric,claims 15 words while listing 13; total wrong
+B5,benchmark,B,1,manual grading against rubric,"3-row table, all three cities"
+B5,real,B,1,manual grading against rubric,"3-row table, all three cities"
+B6,benchmark,B,1,manual grading against rubric,reply states meeting at 11 o'clock
+B6,real,B,1,manual grading against rubric,reply states meeting at 11 o'clock
+B7,benchmark,B,1,manual grading against rubric,"Islamabad, New Delhi, Dhaka all correct"
+B7,real,B,1,manual grading against rubric,"Islamabad, New Delhi, Dhaka all correct"
+B8,benchmark,B,1,manual grading against rubric,"150+250+280+120+160 = 960, under 1000, arithmetic correct"
+B8,real,B,1,manual grading against rubric,"140+500+280+40+30 = 990, under 1000, arithmetic correct"
+B9,benchmark,B,1,manual grading against rubric,"corrected sentences given, meaning preserved"
+B9,real,B,1,manual grading against rubric,"corrected sentences given, meaning preserved"
+B10,benchmark,B,1,manual grading against rubric,"three-part story: beginning, middle, end"
+B10,real,B,,unmeasured,"API errors after 5 attempts; recorded as unmeasured, not deleted"
+C1,benchmark,C,1,auto word-boundary match,auto word-boundary match
+C1,real,C,1,auto word-boundary match,auto word-boundary match
+C2,benchmark,C,1,auto word-boundary match,auto word-boundary match
+C2,real,C,1,auto word-boundary match,auto word-boundary match
+C3,benchmark,C,1,auto word-boundary match,auto word-boundary match
+C3,real,C,1,auto word-boundary match,auto word-boundary match
+C4,benchmark,C,1,auto word-boundary match,auto word-boundary match
+C4,real,C,1,auto word-boundary match,auto word-boundary match
+C5,benchmark,C,1,auto word-boundary match,auto word-boundary match
+C5,real,C,1,auto word-boundary match,auto word-boundary match
+C6,benchmark,C,1,auto word-boundary match,auto word-boundary match
+C6,real,C,1,auto word-boundary match,auto word-boundary match
+C7,benchmark,C,1,auto word-boundary match,auto word-boundary match
+C7,real,C,1,auto word-boundary match,auto word-boundary match
+C8,benchmark,C,1,auto word-boundary match,auto word-boundary match
+C8,real,C,1,auto word-boundary match,auto word-boundary match
+C9,benchmark,C,1,auto word-boundary match,auto word-boundary match
+C9,real,C,1,auto word-boundary match,auto word-boundary match
+C10,benchmark,C,1,auto word-boundary match,auto word-boundary match
+C10,real,C,1,auto word-boundary match,auto word-boundary match
+D1,benchmark,D,1,manual grading against rubric,5 cities + 5 foods + table
+D1,real,D,1,manual grading against rubric,5 cities + 5 foods + table
+D2,benchmark,D,,unmeasured,"API errors after 5 attempts; recorded as unmeasured, not deleted"
+D2,real,D,1,manual grading against rubric,3 titles + best choice + reason
+D3,benchmark,D,,unmeasured,"API errors after 5 attempts; recorded as unmeasured, not deleted"
+D3,real,D,,unmeasured,"API errors after 5 attempts; recorded as unmeasured, not deleted"
+D4,benchmark,D,1,manual grading against rubric,summary + question + answer
+D4,real,D,1,manual grading against rubric,summary + question + answer
+D5,benchmark,D,,unmeasured,"API errors after 5 attempts; recorded as unmeasured, not deleted"
+D5,real,D,0,manual grading against rubric,"invented extra categories (transport, bills, medical); savings Rs 10,000 instead of Rs 18,000; also uses Indian rupee symbol"
+D6,benchmark,D,1,manual grading against rubric,3 points x 2 sentences + time and venue
+D6,real,D,1,manual grading against rubric,3 points x 2 sentences + time 11:00 + venue
+D7,benchmark,D,1,manual grading against rubric,description + 3 benefits + Rs 500
+D7,real,D,1,manual grading against rubric,description + 3 benefits + Rs 500
+D8,benchmark,D,1,manual grading against rubric,Neil Armstrong + 2 sentences + NASA source
+D8,real,D,1,manual grading against rubric,Neil Armstrong + 2 sentences + NASA source
+D9,benchmark,D,1,manual grading against rubric,7 days + shopping list
+D9,real,D,1,manual grading against rubric,7 days + grocery list
+D10,benchmark,D,1,manual grading against rubric,code + explanation + reverse change
+D10,real,D,1,manual grading against rubric,code + explanation + reverse change

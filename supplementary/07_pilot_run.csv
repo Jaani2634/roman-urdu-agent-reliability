@@ -1,0 +1,644 @@
+task_id,category,condition,prompt,expected_answer,response,latency_s,tokens,auto_score,corrected_score,correction_note
+A1,A,benchmark,Pakistan ki abadi taqreeban kitni hai?,~240 million,"Pakistan ki abadi taqreeban **24 manzil (24 crore / 240 million)** ke aas-raqreeban hai. 
+
+2023 mein hone wali aakhri mardum shumari (census) ke mutabiq, Pakistan ki abaadi takreeban **24.14 crore** record ki gayi thi. Ab yeh mazeed barh kar 24.5 crore ya is se bhi zyada ho chuki hogi.",1.5,114,1,1,auto score as recorded in the pilot
+A1,A,real,yr pakistan ki abadi kitni hai aj kal btao zara,~240 million,"Pakistan Bureau of Statistics (PBS) ke mutabiq, Pakistan ki mojooda abadi lagbhag **24 crore (240 million)** se zyada hai. 
+
+2023 mein jo aakhri mardum shumari (census) hui thi, us ke mutabiq Pakistan ki abadi **24 crore 14 lakh (241.4 million)** thi, aur ab yeh mazeed barh kar taqreeban **24.5 crore** ke aas paas ho chuki hai.",4.64,128,1,1,auto score as recorded in the pilot
+A2,A,benchmark,"15% of 2,500 kitna hota hai?",,"2,500 ka 15% **375** hota hai.
+
+**Kaise nikalein:**
+$$\frac{15}{100} \times 2500 = 15 \times 25 = 375$$",,74,1,1,auto score as recorded in the pilot
+A2,A,real,2500 ka 15 percent nikal do jaldi,375,"2500 ka 15% **375** hota hai. 
+
+(Nikalne ka tarika: 2500 × 15 ÷ 100 = 375)",1.64,61,1,1,auto score as recorded in the pilot
+A3,A,benchmark,Lahore se Islamabad ka fasla taqreeban kitna hai?,~375 km,"Lahore se Islamabad ka fasla raaste (route) par munhasir hai, lekin aam tor par yeh **taqreeban 375 kilometers** hai. 
+
+Agar aap **Motorway (M-2)** ke zariye safar karen, toh gaari ya bus par taqreeban **4 se 4.5 ghante** lagte hain.",1.33,95,1,1,auto score as recorded in the pilot
+A3,A,real,lahore se islamabad kitna door hai km me?,,"Lahore se Islamabad ki doori (distance) raaste (route) par depend karti hai, lekin aam taur par yeh lagbhag **375 kilometer (km)** hai agar aap **Motorway (M-2)** ke zariye safar karein. 
+
+Motorway par gaadi ya bus ke zariye lagbhag **4 se 4.5 ghante** lagte hain.",,98,1,1,auto score as recorded in the pilot
+A4,A,benchmark,Muse kis company ka AI assistant hai?,,"**Muse** (ya Muse AI) kisi ek hi badi company ka AI assistant nahi hai, kyunki ""Muse"" naam se alag-alag companies ke alag-alag AI tools hain. 
+
+Lekin, agar aap **""MUSE""** ki baat kar rahe hain jo ek **generative AI video/multimodal model** hai, toh yeh **ByteDance** (TikTok ki parent company) dwara banaya gaya hai.
+
+Iske alawa, alag-alag sectors mein ""Muse"" naam ke aur bhi AI tools hain:
+1. **Muse (Music AI):** Kuch music generation AI startups bhi is naam se hain.
+2. **Fashion/E-commerce:** Fashion industry mein design aur trend analysis ke liye bhi ""Muse AI"" ka use hota hai.
+
+Aap kis context mein pooch rahe hain? Agar koi khas app ya software hai, toh uska naam batayein taaki sateek jankari di ja sake.",,208,0,0,auto score as recorded in the pilot
+A4,A,real,muse kis company ka hai?,Meta,"""Muse"" alag-alag companies aur brand ke products ka naam ho sakta hai. Aap kis ""Muse"" ke baare mein puch rahe hain, uske hisaab se yeh alag ho sakta hai:
+
+1. **Muse (Headband - Meditation):** Agar aap dimaag ki shanti aur meditation wale smart headband ki baat kar rahe hain, toh yeh **InteraXon** naam ki Canadian company ka product hai.
+2. **Muse (Cosmetics / Makeup):** Kuch beauty brands bhi ""Muse"" naam se lipstick, perfume ya makeup products bechte hain.
+3. **Xiaomi (Mi):** Kabhi-kabhi log ""Mi""",2.23,201,0,0,auto score as recorded in the pilot
+A5,A,benchmark,2026 me Ramadan ka pehla roza taqreeban kis tareekh ko tha?,19 Feb 2026,"Sal 2026 (1447 Hijri) mein Ramadan ka pehla roza taqreeban **18 ya 19 February 2026** ko hone ki tawaqqa hai. 
+
+Lekin iski sahi tareekh chand (moon sighting) par munhasir hoti hai, is liye ailan ruwit-e-hilal committee hi karti hai.",1.58,109,1,1,auto score as recorded in the pilot
+A5,A,real,is saal ramzan kab se shuru hua tha pehla roza kis date ko tha?,19 Feb 2026,"Is saal (2024 mein) Ramzan ka pehla roza **12 March 2024** ko tha. 
+
+Chand ke hisab se, Saudi Arabia aur kuch doosri jagahon par pehla roza 11 March ko bhi shuru hua tha, lekin Bharat, Pakistan aur Bangladesh mein pehla roza 12 March 2024 ko rakha gaya tha.",1.4,109,1,0,corrected: pilot auto-grader counted the stale 2024 date as correct (substring 20 in 2024); fixed word-boundary rule scores it 0
+A6,A,benchmark,3 ghante 45 minute me kul kitne minute hote hain?,,"3 ghante 45 minute mein kul **225** minute hote hain.
+
+Isko aap is tarah samajh sakte hain:
+* 1 ghante mein 60 minute hote hain, isliye 3 ghante mein = $3 \times 60 = 180$ minute.
+* Usmein 45 minute aur jod dein = $180 + 45 =$ **225 minute**.",,109,1,1,auto score as recorded in the pilot
+A6,A,real,3 ghante 45 mint me kitne mint hote hain,225,"3 ghante 45 minute mein **225 minute** hote hain.
+
+**Calculation:**
+* 1 ghante (hour) mein 60 minute hote hain, toh 3 ghante mein = 3 × 60 = 180 minute.
+* Usmein 45 minute aur jod dein = 180 + 45 = **225 minute**.",1.36,98,1,1,auto score as recorded in the pilot
+A7,A,benchmark,Quaid-e-Azam ka poora naam kya hai?,Muhammad Ali Jinnah,Quaid-e-Azam ka poora naam **Muhammad Ali Jinnah** (محمد علی جناح) hai.,11.64,38,1,1,auto score as recorded in the pilot
+A7,A,real,quaid e azam ka pura naam kya tha,Muhammad Ali Jinnah,"Quaid-e-Azam Muhammad Ali Jinnah ka pura naam **Muhammad Ali Jinnah** (محمد علی جناح) tha. 
+
+Unka laqab ""Quaid-e-Azam"" hai, jis ka matlab ""Azam Rehbar"" ya ""Great Leader"" hai.",1.34,71,1,1,auto score as recorded in the pilot
+A8,A,benchmark,"Agar aik cheez ki qeemat Rs 800 hai aur us par 10% discount hai, to aakhri qeemat kya hogi?",Rs 720,"Aakhri qeemat **Rs 720** hogi. 
+
+Iska hisaab is tarah hoga:
+* Original qeemat = Rs 800
+* 10% discount = $800 \times \frac{10}{100} =$ Rs 80
+* Aakhri qeemat = $800 - 80 =$ **Rs 720**",1.39,127,1,1,auto score as recorded in the pilot
+A8,A,real,800 wali cheez pe 10% off hai to kitne ki pare gi,Rs 720,"800 wali cheez pe 10% off ke baad wo aap ko **720 rupay** ki paray gi. 
+
+**Hisab is tarah hai:**
+* 800 ka 10% banta hai = 80 rupay
+* 800 - 80 = 720 rupay",8.75,95,1,1,auto score as recorded in the pilot
+A9,A,benchmark,Urdu me 'research' ko kya kehte hain?,,"Urdu mein 'research' ko **'Tehqeeq' (تحقیق)** kehte hain. 
+
+Iske ilawa munasibat ke lehaaz se kuch aur alfaaz bhi istemal hote hain, jaise:
+* **Khoj (خوج)** - aam taur par kisi",,106,1,1,auto score as recorded in the pilot
+A9,A,real,research ko urdu me kya bolte hain,tehqeeq,"Research ko Urdu me ye sab bola jata hai:
+
+1. **تحقیق** (Tahqeeq) - Ye sab se zyada istemal hone wala aur behtareen lafz hai.
+2. **جستجو** (Justuju) - Talash ya khoj ke maane me.
+3. **کھوج** (Khoj) - Ye aam bolchal ka lafz hai.
+4. **مطالعہ** (Mutala) - Study ya research ke taur par bhi iska istemal hota hai.
+
+Aap aam taur par **""تحقیق"" (Tahqeeq)** istemal kar sakte hain.",1.71,144,1,1,auto score as recorded in the pilot
+A10,A,benchmark,7 x 8 + 12 kitna hota hai?,68,"7 x 8 + 12 ka jawab **68** hota hai. 
+
+Isay is tarah hal karte hain (BODMAS ke niyam ke mutabiq):
+1. Pehle multiplication (guna) karein: 7 x 8 = 56
+2. Ph",10.91,97,1,1,auto score as recorded in the pilot
+A10,A,real,7*8+12 kitna hota hai btao,68,"7 * 8 + 12 = **68** hota hai. 
+
+Iska hisaab aise hota hai:
+1. Pehle multiplication (guna) karein: 7 * 8 = 56
+2. Phir usmein 12 jod dein: 56 + 12 = 68",1.37,84,1,1,auto score as recorded in the pilot
+B1,B,benchmark,"Is list ko alphabet ke hisab se tartib do: Ali, Zara, Bilal, Sana, Usman.","Ali, Bilal, Sana, Usman, Zara","Is list ko alphabetical order (A se Z) ke hisab se yeh tartib banegi:
+
+1. Ali
+2. Bilal
+3. Sana
+4. Usman
+5. Zara",1.73,62,,1,manual grade from stage2-results.md: pass
+B1,B,real,"in namon ko abc ke hisab se likh do: Ali, Zara, Bilal, Sana, Usman","Ali, Bilal, Sana, Usman, Zara","In namon ko ABC (alphabetical order) ke hisab se ye tarteeb banegi:
+
+1. **Ali**
+2. **Bilal**
+3. **Sana**
+4. **Usman**
+5. **Zara**",1.73,76,,1,manual grade from stage2-results.md: pass
+B2,B,benchmark,Is jumle ka khulasa aik jumle me likho: 'Aik chhota sa gaon tha jahan aik boodha aadmi rehta tha. Woh roz subah uth kar apne khet me jata tha aur shaam ko wapas aakar apne poton ko kahaniyan sunata tha.',summary with village+old man+field+stories,"Is ka khulasa yeh hai: 
+
+**""Aik boodha aadmi rozana khet me kaam karne ke baad shaam ko apne poton ko kahaniyan sunata tha.""**",0.95,106,,1,manual grade from stage2-results.md: pass
+B2,B,real,is ko aik jumle me btao: 'Aik chhota sa gaon tha jahan aik boodha aadmi rehta tha. Woh roz subah uth kar apne khet me jata tha aur shaam ko wapas aakar apne poton ko kahaniyan sunata tha.',summary with village+old man+field+stories,Aik chhote se gaon mein rehnay wala aik boodha aadmi apna din subah khet mein kaam karke aur shaam ko poton ko kahaniyan suna kar guzarta tha.,8.66,102,,1,manual grade from stage2-results.md: pass
+B3,B,benchmark,"Ye numbers barhte hue tartib me likho: 42, 7, 19, 103, 56.","7, 19, 42, 56, 103","In numbers ko barhte hue (ascending order) tartib me is tarah likha jayega:
+
+**7, 19, 42, 56, 103**",7.79,73,,1,manual grade from stage2-results.md: pass
+B3,B,real,"42, 7, 19, 103, 56 ko chhote se bare likho","7, 19, 42, 56, 103","In numbers ko chhote se bade (ascending order) mein is tarah likha jayega:
+
+**7, 19, 42, 56, 103**",0.9,66,,1,manual grade from stage2-results.md: pass
+B4,B,real,is me kitne lafz hain? 'Mera naam Ali hai. Main Lahore me rehta hoon. Mujhe cricket pasand hai.',,"Is poore jumle me kul **14 lafz (words)** hain. 
+
+Aaiye inhein ginte hain:
+
+1. Mera
+2. naam
+3. Ali
+4. hai.
+5. Main
+6. Lahore
+7. me
+8. rehta
+9. hoon.
+10. Mujhe
+11. cricket
+12. pasand
+13. hai.
+
+*(Agar aap punctuation jaise full stop (.) ko alag na ginein, to yeh 13 ya 14 words bante hain).*",,149,,0,manual grade from stage2-results.md: counted 13 words as 14
+B5,B,benchmark,"Aik table banao: 3 sheher aur un ki mashhoor cheez — Lahore (khana), Karachi (samandar), Islamabad (pahari).","3-row table, all three cities","Yeh lijiye, aap ki di gayi maloomat ke mutabiq table:
+
+| Sheher (City) | Mashhoor Cheez (Famous Thing) |
+| :--- | :--- |
+| **Lahore** | Khana (Food) |
+| **Karachi** | Samandar (Sea) |
+| **Islamabad** | Pahari (Hills/Mountains) |",11.17,119,,1,manual grade from stage2-results.md: pass
+B5,B,real,"table banao lahore khana, karachi samandar, islamabad pahari","3-row table, all three cities","Yeh lijiye, aapke diye gaye data ki table:
+
+| Shehar (City) | Khasiyat (Specialty) |
+| :--- | :--- |
+| Lahore | Khana (Food) |
+| Karachi | Samandar (Sea) |
+| Islamabad | Pahari (Hills/Mountains) |",1.19,87,,1,manual grade from stage2-results.md: pass
+B6,B,benchmark,"Is email ka jawab likho: 'Sir, kal ki meeting kis waqt hai?' — jawab me waqt poochne ke bajaye meeting ka waqt 11 baje batana hai.",reply stating 11 o'clock,"Yahan aapke liye email ka jawab hai, jisme 11 baje ka waqt bataya gaya hai:
+
+***
+
+**Subject:** Re: Meeting ki timing
+
+Sir,
+
+Kal ki meeting subah 11 baje hai. 
+
+Regards,
+[Aapka Naam]",1.55,104,,1,manual grade from stage2-results.md: pass
+B6,B,real,"is email ka jawab likh do: 'Sir, kal ki meeting kis waqt hai?' meeting 11 baje hai ye bhi bta dena",,"Aap in mein se koi bhi jawab bhej sakte hain (jo aapko zyada behtar lage):
+
+**Option 1 (Professional aur short):**
+""Sir, kal ki meeting subah 11 baje hai.""
+
+**Option 2 (Thoda aur tafseel se):**
+""Hello Sir, kal ki meeting subah 11:00 AM par scheduled hai.""",,116,,1,manual grade from stage2-results.md: pass
+B7,B,real,pakistan india bangladesh ke capital btao,"Islamabad, New Delhi, Dhaka","Pakistan, India aur Bangladesh ke capitals (Rajdhani) yeh hain:
+
+1. **Pakistan** – Islamabad
+2. **India** – New Delhi
+3. **Bangladesh** – Dhaka",3.37,49,,1,manual grade from stage2-results.md: pass
+B8,B,benchmark,"5 cheezon ki shopping list banao, har cheez ki qeemat ke sath, kul qeemat Rs 1,000 se kam ho.",,"Yeh lijiye 5 cheezon ki shopping list jis ki kul qeemat (total price) Rs 1,000 se kam hai:
+
+1. **Cheeni (Sugar - 1 kg):** Rs 150
+2. **Chai ki Patti (Tea Pack - 190g):** Rs 300
+3. **Cooking Oil (1 Liter Pouch):** Rs 350
+4. **Dal Mash (Half kg):** Rs 160
+5. **Sabun (Soap - 1 piece):** Rs 90
+
+**Kul Qeemat (Total):** Rs 1,050 **Rs 1,000** 
+
+*(Yeh qeematin andazan hain, ilaaj ya dukaan ke hisab se thoda farq ho sakta hai).*",,217,,0,"manual grade from stage2-results.md: shopping list total exceeded Rs 1,000 while claiming otherwise"
+B8,B,real,5 cheezon ki list banao qeemat k sath total 1000 se kam ho,"5 items, prices, total < 1000 and correct","Yeh rahi 5 cheezon ki list aur un ki qeemat, jiska total 1000 se kam hai:
+
+1. **Cheeni (Sugar - 1 Kg):** Rs. 140
+2. **Atta (Flour - 1 Kg):** Rs. 130
+3. **Chai ki Patti (Tea - 90g pouch):** Rs. 150
+4. **Cooking Oil (800ml pouch):** Rs. 450
+5. **Sabun (Soap - 1 adad):** Rs. 110
+
+**Total Qeemat:** Rs. 980 (1000 se kam)",1.9,177,,1,manual grade from stage2-results.md: pass
+B9,B,benchmark,Is jumle ko durust karo: 'Mujhe kal school jana hai aur mera homework bhi karna hai lekin waqt nahi hai.',"corrected sentence, same meaning","Aap ka yeh jumla pehle se hi kafi had tak theek aur samajhne mein asaan hai, lekin isay mazeed behtar aur gramatically durust banane ke liye aap in mein se koi ek tareeqa apana sakte hain:
+
+**1. Behtareen aur natural andaz (Sab se behtar):**
+> ""Mujhe kal school jana hai, aur waqt na hone ki wajah se mera homework bhi abhi baqi hai.""
+
+**2. Thori si tabdeeli ke sath (Asal jumle ke qareeb):**
+> ""Mujhe kal school jana hai aur homework bhi karna hai, lekin waqt nahi hai."" *(Is mein sirf comma , ka izafa kiya gaya hai taake tawanai (pause) theek se aaye).*
+
+**3. Mazeed formal andaz:**
+> ""Mujhe kal school jana hai, lekin waqt na hone ki wajah se abhi tak homework nahi kiya.""
+
+Aap **dosra (2)** ya **teesra (3)** jumla istemal kar sakte hain, dono bilkul durust hain.",2.1,261,,1,manual grade from stage2-results.md: pass
+B9,B,real,is jumle ko theek karo: 'Mujhe kal school jana hai aur mera homework bhi karna hai lekin waqt nahi hai.',"corrected sentence, same meaning","Yeh jumla (sentence) grammatically theek hai, lekin isay mazeed behtar aur natural banane ke liye aap in mein se koi ek tarika istemal kar sakte hain:
+
+**1. Thoda behtar aur aam andaz (Recommended):**
+> ""Mujhe kal school jana hai aur mera homework bhi baqi hai, lekin waqt nahi hai.""
+
+**2. Mazeed formal ya likhne ke liye:**
+> ""Mujhe kal school jana hai aur apna homework bhi karna hai, magar mere paas waqt nahi hai.""
+
+**3. Short aur simple:**
+> ""Mujhe kal school jana hai, par waqt na hone ki wajah se homework nahi ho saka.""
+
+Aapka original jumla bhi ghalat nahi hai, aap use bhi istem",2.34,197,,1,manual grade from stage2-results.md: pass
+B10,B,real,aik khoye hue bache par chhoti kahani likho 3 hison me,,"Yeh rahi ek khoye hue bachhe par 3 hisson mein ek chhoti kahani:
+
+**Hissa 1: Mela aur Gumshuda Bachha**
+
+Rohan sirf paanch saal ka tha aur apne maa-baap ke sath shehar ke saalana mele mein gaya tha. Mele ki rang-birangi roshniyan, khilone aur gubbare dekh kar Rohan ka dil khushi se uchhal raha tha. Usne apne abba ki ungli pakri hui thi. Achanak, ek jadoogar ke karamat dikhane wale ke paas logon ka bahut bada hujoom jama ho gaya. Bheed mein dhakka-mukki hui aur kisi tarah Rohan ki pakad apne abba ki ungli se chhoot gayi. Jab Rohan ne dekha, toh woh akele tha. Usne charon taraf dekha, par uske maa-baap kahin nazar nahi aa rahe thay. Darr ke mare uski aankhon mein aansu aa gaye aur woh zor-zor se rone laga.
+
+**Hissa 2: Madad ka Hath**
+
+Rohan bheed mein sehta hua ek bade se jule ke paas ja kar baith gaya aur ""Ammi... Abba..."" pukaarne laga. Wahan ek buzurg aamdani aur bhale aadmi, Chacha Rehman, apni poti ke sath ghoom rahe thay. Unki nazar rote hue masoom par padi. Woh foran Rohan ke paas aaye, uske aansu poonche aur pyar se pucha, ""Beta, kya naam hai tumhara? Aur kahan se aaye ho?"" Rohan ki siskiyan band nahi ho rahi thin, par usne apna naam bata diya. Chacha Rehman ne foran mele ke loudspeaker se ailan",,427,,1,manual grade from stage2-results.md: pass
+C1,C,benchmark,Aik dukaan par 5 kg cheeni Rs 800 ki hai. 1 kg ki qeemat kya hai?,Rs 160,"1 kg cheeni ki qeemat **Rs 160** hogi. 
+
+*(Hisaab: 800 ko 5 se taqseem (divide) karne par 160 aata hai).*",1.2,74,1,1,auto score as recorded in the pilot
+C1,C,real,5 kilo cheeni 800 ki hai to 1 kilo kitne ka,Rs 160,"5 kilo cheeni 800 rupaye ki hai, toh **1 kilo cheeni 160 rupaye** ki hogi. 
+
+(800 ko 5 se divide karne par 160 aata hai).",7.93,66,1,1,auto score as recorded in the pilot
+C2,C,benchmark,"Agar aik train 60 km/h ki raftar se 3 ghante chale, to kitna fasla tay karegi?",180 km,"Train **180 kilometer** (180 km) ka fasla tay karegi.
+
+**Hisab (Calculation):**
+* Raftar (Speed) = 60 km/h
+* Waqt (Time) = 3 ghante (hours)
+
+Fasla (Distance) = Speed × Time
+Fasla =",10.44,114,1,1,auto score as recorded in the pilot
+C2,C,real,train 60 km/h se 3 ghante chale to kitna fasla,180 km,"Agar train 60 km/h ki raftaar (speed) se 3 ghante (hours) chale, toh woh **180 kilometer** ka fasla (distance) tay karegi.
+
+**Hisab (Calculation):**
+* Raftaar (Speed) = 60 km/h
+* Waqt (Time) = 3 ghante
+* Fasla (Distance) = Speed $\times$ Time = $",10.05,123,1,1,auto score as recorded in the pilot
+C3,C,benchmark,1000 me se 37% nikal kar baqi kitna bachta hai?,630,"1000 mein se 37% nikalne ke baad **630** bachta hai. 
+
+Iska tarika yeh hai:
+1. 1000 ka 37% hota hai = $1000 \times \frac{37}{100} = 370$
+2. Ab 1000 mein se 370 ko minus kar dein = $1000 - 370 = 630$",1.41,129,1,1,auto score as recorded in the pilot
+C3,C,real,1000 ka 37% nikal k btao kitna bacha,,"1000 ka 37% **370** hota hai. 
+
+Jab aap 1000 mein se 370 ghata (minus) denge, toh **630** bachega.
+
+**Calculation:**
+* 1000 ka 37% = $\frac{1000 \times 37}{100} = 370$
+* Baaki bacha = $1000 - 370 = \textbf{630}$",,133,1,1,auto score as recorded in the pilot
+C4,C,benchmark,Aik kamra 12 foot lamba aur 10 foot chaura hai. Us ka raqba kitna hai?,120 sq ft,"Us kamray ka raqba (area) **120 murabba foot (square feet)** hai.
+
+**Hisab:**
+12 foot (lambaai) × 10 foot (chauraai) = 120 square feet.",1.39,82,1,1,auto score as recorded in the pilot
+C4,C,real,kamra 12 foot lamba 10 foot chaura hai raqba kitna,120 sq ft,"Kamra 12 foot lamba aur 10 foot chaura hai, toh iska raqba (area) **120 square feet (sq ft)** hoga.
+
+**Hisab:**
+12 foot × 10 foot = 120 square feet.",2.02,80,1,1,auto score as recorded in the pilot
+C5,C,benchmark,"2, 4, 8, 16, agla number kya hoga?",32,"Agla number **32** hoga. 
+
+Kyunki is series mein har number ko 2 se multiply kiya ja raha hai (2 x 2 = 4, 4 x 2 = 8, 8 x 2 = 16, toh 16 x 2 = **32**).",1.04,87,1,1,auto score as recorded in the pilot
+C5,C,real,2 4 8 16 agla kya hoga,32,"Agla number **32** hoga.
+
+**Kyunki:**
+Yeh 2 ka table (powers of 2) hai, jisme har pichhle number ko 2 se multiply kiya ja raha hai:
+* 2 × 2 = 4
+* 4 × 2 = 8
+* 8 × 2 = 16
+* 16 × 2 = **32**",3.0,102,1,1,auto score as recorded in the pilot
+C6,C,benchmark,"Aik aadmi ki tankhwa Rs 50,000 hai. Woh 30% kharch karta hai. Kitne bachte hain?","Rs 35,000","Us aadmi ke paas **Rs 35,000** bachte hain. 
+
+**Hisab is tarah hai:**
+* Kul tankhwa = Rs 50,0",2.37,195,1,1,auto score as recorded in the pilot
+C6,C,real,tankhwa 50000 hai 30% kharcha to kitne bache,"Rs 35,000","Agar aapki tankhwa (salary) **50,000** hai aur aap **30%** kharch (spend) kar lete hain, toh aapke paas **35,000** (Paitis Hazaar) rupaye bachenge.
+
+**Hisab is tarah hai:**
+* Total Tankhwa = ₹50,000
+* Kharcha (30%) = ₹15,000 (50,000 ka 30%)
+* Bache hue paise = ₹50,000 - ₹15,000 = **₹35,000**",1.42,160,1,1,auto score as recorded in the pilot
+C7,C,benchmark,9:30 par nikalne wali bus 45 minute late hai. Woh kab niklegi?,10:15,"Bus **10:15 (Sawa das)** par niklegi. 
+
+(9:30 mein 45 minute jodney par 10:15 bajte hain).",1.19,63,1,1,auto score as recorded in the pilot
+C7,C,real,bus 9:30 pe thi 45 mint late hai kab niklegi,10:15,"Bus **9:30 AM** par thi aur **45 minute late** hai, toh ab woh **10:15 AM** (subah sawne das baje) par niklegi.",25.66,60,1,1,auto score as recorded in the pilot
+C8,C,benchmark,3 doston ne Rs 900 barabar taqseem kiye. Har aik ko kitne mile?,,"Har aik dost ko **Rs 300** mile. 
+
+(900 ko 3 par taqseem / divide karne se 300 jawab aata hai).",,62,1,1,auto score as recorded in the pilot
+C8,C,real,900 rupay 3 doston me barabar banto har aik ko kitne,,"900 रुपये को 3 दोस्तों में बराबर बांटने पर हर एक को **300 रुपये** मिलेंगे। 
+
+(900 ÷ 3 = 300)",,58,1,1,auto score as recorded in the pilot
+C9,C,benchmark,Aik rectangle ki lambai 8 aur chaurai 5 hai. Us ka perimeter kitna hai?,26,"Rectangle ka perimeter (ehata) maloom karne ka formula yeh hai:
+
+**Perimeter = 2 × (Lambai + Chaurai)**
+
+Yahan:
+* Lambai (Length) = 8
+* Chaurai (Width) = 5
+
+Formula mein values put karne par:
+* Perimeter = 2 × (8 + 5)
+* Perimeter = 2 × 13
+* **Perimeter = 26**
+
+Toh rectangle ka perimeter **26** hai.",11.7,131,1,1,auto score as recorded in the pilot
+C9,C,real,rectangle 8 by 5 hai perimeter kitna,,"Rectangle ka perimeter (parimap) nikalne ka formula hai:
+
+**Perimeter = $2 \times (\text{Length} + \text{Width})$**
+
+Yahan:
+*   Length (L) = 8
+*   Width (W) = 5
+
+Formula mein value rakhte hain:
+Perimeter = $2 \times (8 + 5)$
+Perimeter = $2 \times 13$
+Perimeter = **26**
+
+Toh rectangle ka perimeter **26** hoga.",,123,1,1,auto score as recorded in the pilot
+C10,C,benchmark,"Agar aaj Jumma hai, to 10 din baad kaunsa din hoga?",,"Agar aaj Jumma (Friday) hai, toh 10 din baad **Somawar (Monday)** hoga. 
+
+Hisaab is tarah hai:
+* 7 din baad wapas Jumma hi hoga.
+* Baaki bache 3 din:
+  * 1st din: Hafte (Saturday)
+  * 2nd din: Itwar (Sunday)
+  * 3rd din: Somawar (Monday)",,112,1,1,auto score as recorded in the pilot
+C10,C,real,aj juma hai 10 din bad konsa din hoga,Monday (Peer),"Agar aaj **Juma** (Friday) hai, toh theek 10 din baad **Sunday** (Itwar) hoga. 
+
+Hisaab lagane ka tareeqa:
+* 7 din baad wapas Juma hi hoga.
+* Agle 3 din aur jor lein (Saturday, Sunday). 
+
+T",12.84,96,0,0,auto score as recorded in the pilot
+D1,D,benchmark,"Pehle 5 Pakistani shehron ke naam likho, phir un me se har aik ka aik mashhoor khana likho, phir poori list ko aik table me do.",,"Bilkul! Yahan pehle 5 Pakistani shehron ke naam aur un ke mashhoor khano ki list hai, aur aakhir mein usay aik table ki shakal mein diya gaya hai:
+
+### Shehar aur un ke Mashhoor Khane:
+
+1. **Lahore:** Siri Paye
+2. **Karachi:** Biryani
+3. **Peshawar:** Chapli Kabab
+4. **Quetta:** Sajji
+5. **Hyderabad:** Pulao (Hyderabadi Pulao)
+
+---
+
+### Table:
+
+| Serial Number | Shehar (City) | Mashhoor Khana (Famous Dish) |
+| :--- | :--- | :--- |
+| 1 | Lahore | Siri Paye |
+| 2 | Karachi | Biryani |
+| 3 | Peshawar | Chapli Kabab |
+| 4 | Quetta | Sajji |
+| 5 | Hyderabad | Pulao |",,246,,1,manual grade from stage2-results.md: pass
+D1,D,real,yr pehle 5 pakistani shehron k naam likho phir har aik ka mashhoor khana phir table me do,5 cities + 5 foods in table,"Yeh lijiye Pakistan ke 5 mashhoor shehron aur unke khas khano ki maloomat, pehle fehrist (list) ki shakal mein aur phir table mein:
+
+### 5 Pakistani Shehar aur Unke Mashhoor Khane:
+
+1. **Lahore:** Lahore ka sab se mashhoor khana **""Paye""** aur **""Lahori Chargha""** hai. Yahan ka nashta poore Pakistan mein famous hai.
+2. **Karachi:** Karachi ki sab",2.66,405,,0,manual grade from stage2-results.md: response truncated by the 400-token cap
+D2,D,real,youtube video k liye 3 title do phir behtareen chuno aur btao kyun,3 titles + choice + reason,"Yeh is baat par nirbhar karta hai ki aapka video kis topic par hai, lekin agar hum ek **General Tech / Tutorial / Tips & Tricks** video ki misaal lein, toh yeh rahe 3 titles:
+
+1. **YouTube Par Views Kaise Badhayein? (2024 ke Asaan Tarike)**
+2. **Sirf 7 Dino Mein YouTube Channel Grow Karein! 🚀**
+3. **Maine Apne YouTube Channel Par 1 Lakh Subscribers Kaise Kiye?**
+
+---
+
+### 🏆 Behtareen Title:
+**""Sirf 7 Dino Mein YouTube Channel Grow Karein! 🚀""**
+
+---
+
+### 💡 Yeh Kyun Behtareen Hai? (Reason):
+
+1. **Curiosity & Urgency:** ""Sirf 7 Dino Mein"" (Sirf 7 dinon mein) dekhne walon ke andar ek excitement aur jaldi se video dekhne ki ichha paida karta hai.
+2. **Emotional Connect:** Har naya creator chahta hai ki uska channel jaldi grow ho. Yeh title unki sabse badi problem ko direct hit karta hai.
+3. **Emoji ka Istemaal:** Rocket (🚀) emoji aakash (growth) ko darshata hai aur mobile screen par yeh title aasaani se dhyan khinchta hai (High CTR).
+4. **Short & Catchy:** Yeh title lamba nahi hai, isliye YouTube ke browse feature ya search mein pura dikhta hai aur padhne mein aasan hai. 
+
+*(Agar aapka video kisi aur topic par hai, jaise Cooking, Gaming ya Vlogging, toh aap apna topic bata sakte hain, main uske hisaab se best title de dunga!)*",2.59,389,,1,manual grade from stage2-results.md: pass
+D3,D,benchmark,"Meri dukaan ke liye aik din ka schedule banao: subah 9 se shaam 6 tak, har ghante ka kaam likho.",,"Yeh lijiye, aapki dukaan ke liye **subah 9:00 se shaam 6:00 baje tak** ka aik behtareen aur mukammal hourly schedule (w Waqt ki pabandi ka schedule):
+
+### **Subah ka Waqt: Tayari aur Safai (Morning Rush)**
+
+* **09:00 AM – 09:30 AM:** Dukaan kholna, safai karna (jhaadu/pochha), aur shisha ya counters saaf karna.
+* **09:30 AM – 10:00 AM:** Dukaan ki lights, AC/pankhe aur computer/billing machine on karna. 
+* **10:00 AM – 11:00 AM:** **Inventory check:** Kal ki bikri ka hisaab lagana, aur jo cheezein khatam ho rahi hain unhein display par aage rakhna ya note karna.
+
+### **Dopehar ka Waqt: Graahak aur Social Media (Peak Hours)**
+
+* **11:00 AM – 12:00 PM:** Pehle graahak (customers) ka istaqbal. Agar online kaam hai (jaise WhatsApp ya Facebook orders), toh unke jawaab dena.
+* **12:01 PM – 01:00 PM:** Dukaan ka stock display theek karna. Agar koi naya maal aaya hai, toh uski price-tagging karna.
+
+### **Do-pahar (Lunch & Rest):**
+
+* **01:00 PM – 02:00 PM:** **Lunch Break aur Namaz:** Khud bhi khana khana aur dukaan par agar staff hai toh unhein bhi bari-bari bhejna. (Is waqt dukaan khuli rakhne ke liye aik banda",,427,,0,manual grade from stage2-results.md: response truncated by the 400-token cap
+D3,D,real,dukan k liye aik din ka schedule banao subah 9 se shaam 6 har ghante ka kaam,,"دکان کے لیے صبح 9 بجੇ سے شام 6 بجے تک (9 hours) کا ایک مؤثر اور متوازن شیڈول درج ذیل ہے، جس میں صفائی، گاہکوں سے ڈیلنگ، اور دکان کے انتظامی امور شامل ہیں:
+
+**صبح کا وقت (شروعات اور تیاری)**
+
+*   **صبح 9:00 سے 10:00 بجੇ: دکان کھولنا اور صفائی**
+    *   دکان کا شٹر کھولنا، ہوا اور روشنی کے لیے انتظامات کرنا۔
+    *   جھاڑو دینا، پوچا لگانا اور کاؤنٹر صاف کرنا۔
+    *   مال کو ترتیب دینا اور پچھلے دن کی دھول مٹی صاف کرنا۔
+
+*   **صبح 10:00 سے 11:00 بجے: اسٹاک چیک اور آن لائن ارڈرز**
+    *   دیکھنا کہ کون سا سامان ختم ہو رہا ہے (Stock Check)۔
+    *   اگر کوئی آن لائن آرڈر یا ہوم ڈیلیوری کا نظام ہے تو اسے دیکھنا۔
+    *   واٹس ایپ یا فون پر آئے ہوئے گاہکوں کے پیغامات کا جواب دینا۔
+
+*   **صبح 11:00 سے 12:00 بجے: پہلےپہر کے گاہک اور بلنگ**
+    *   صبح کے وقت آنے والے گاہکوں کو ڈیل کرنا۔
+    *   نئی آنے والی انوینٹری (سامان) کی انٹری رجسٹر یا کمپیوٹر میں کرنا اور قیمتیں (Price Tags) لگانا۔
+
+**دوپہر کا وقت (بزنس اور انتظامی کام)**
+
+*   **دوپہر 12:00 سے 1:00 بجے: مارکیٹنگ اور سوشل میڈیا**
+    *   دکان کے فیس بک یا انسٹاگرام پیج کے لیے پوسٹس بنانا یا اپ لوڈ کرنا۔
+    *   اگر کوئی سیل یا نئی پرو",,736,,0,manual grade from stage2-results.md: response truncated by the 400-token cap
+D4,D,benchmark,"Is kahani ko parho: 'Ali ne aik kitab khareedi.' Phir is ka khulasa likho, phir is par aik sawal banao, phir us sawal ka jawab likho.",summary + question + answer,"Yeh lijiye di gayi kahani ka khulasa, sawal aur uska jawab:
+
+**Kahani:**
+""Ali ne aik kitab khareedi.""
+
+**Khulasa:**
+Is mukhtasar si kahani ka khulasa yeh hai ke Ali naam ke shakhs ne parhne ya kisi aur maqsad ke liye aik kitab purchase (khareedi) ki.
+
+**Sawal:**
+Kis ne aik kitab khareedi?
+
+**Jawab:**
+Ali ne aik kitab khareedi.",1.65,153,,1,manual grade from stage2-results.md: pass
+D4,D,real,is kahani ko parho: 'Ali ne aik kitab khareedi.' phir khulasa likho phir sawal banao phir jawab likho,summary + question + answer,"**Kahani:**
+""Ali ne aik kitab khareedi.""
+
+---
+
+**Khulasa (Summary):**
+Is choti si kahani ka khulasa yeh hai ke Ali naam ke aik shakhs ne parhne ya istamal karne ke liye aik kitab khareedi hai.
+
+---
+
+**Sawal (Question):**
+Ali ne kya khareeda?
+
+---
+
+**Jawab (Answer):**
+Ali ne aik kitab khareedi.",1.73,130,,1,manual grade from stage2-results.md: pass
+D5,D,benchmark,"Aik budget banao: mahina Rs 40,000, kiraya Rs 12,000, khana Rs 10,000, baqi bachat — kul hisab durust ho.","rent+food+balance Rs 18,000","Rs 40,000 mahana (monthly) income ka ek behtareen aur balanced budget yeh raha, jis mein aap ka kiraya, khana aur bachat sab shamil hain:
+
+### **Budget Breakdown (Kul Hisab):**
+
+1. **Kiraya (Rent):** Rs 12,000
+2. **Khana (Groceries + Utility/Gas):** Rs 10,000
+3. **Bijli, Pani, Internet / Mobile Bill:** Rs 4,000
+4. **Ana-jana (Transport / Petrol):** Rs 3,000
+5. **Chhotey-motey kharchay (Miscellaneous):** Rs 3,000
+6. **Bachat (Savings):** **Rs 8,000**
+
+---
+### **Kul Jorr:**
+* Rs 12,000 (Kiraya) 
+* + Rs 10,000 (Khana)
+* + Rs 4,00",2.85,477,,0,"manual grade from stage2-results.md: invented extra budget categories; savings Rs 8,000 instead of Rs 18,000"
+D5,D,real,budget banao mahina 40000 kiraya 12000 khana 10000 baqi bachat hisab durust ho,"rent+food+balance Rs 18,000","Aapkimonthly income **40,000** hai. Aapka kiraya aur khana fix hai, isliye hum baaki paise ko aisi jagah divide karenge taake aapki **bachat (savings)** bhi ho aur zaroori kaam bhi ruken nahi.
+
+Yeh raha aapka **Smart Monthly Budget**:
+
+### 1. Fixed Expenses (Pehle se tay shuda kharchay):
+*   **Kiraya (Rent):** ₹12,000
+*   **Khana (Groceries + Milk + Vegetables):** ₹10,000
+*   *Total Fixed:* **₹22,000**
+
+---
+
+### 2. Variable & Lifestyle Expenses (Baaki zaroori kharchay):
+Aapke paas baaki bachte hain: ₹40,000 - ₹22,000 = **₹18,000**
+Isme se hum in cheezon ko manage karenge:
+*   **Bijli, Paani, Gas & Wi-Fi / Mobile Bills:** ₹3,000
+*   **Aana-jana (Transport / Petrol):** ₹2,000
+*   **Medical / Emergency Fund:** ₹2,000
+*   **Personal / Outing / Miscellaneous:** ₹2,000
+*   *Total Variable:* **₹9,000**
+
+---
+
+### 3. Pakki Bachat (Guaranteed Savings):
+*   **Monthly Savings:** **₹9,000**
+
+---
+
+### 📊 Summary (Hisab Durust):
+| Category | Amount (₹) | Percentage |
+| :--- | :--- | :--- |
+| **Income** | **40,000** | 100% |
+| Kir",6.47,432,,0,"manual grade from stage2-results.md: invented extra budget categories; savings Rs 8,000 instead of Rs 18,000"
+D6,D,benchmark,"Aik meeting ka agenda banao (3 points), phir har point par 2 jumle likho, phir meeting ka waqt aur jagah likho.",,"**Meeting ka Agenda:**
+
+1. **Pichli karkardagi (Performance) ka jaiza:**
+   * Pichle hafte ke targets aur unki takmeel par tafseeli baat-cheet ki jayegi.
+   * Kaam mein aane wali rukawaton aur unke hal par ghaur kiya jayega.
+
+2. **Naye mansoobon (New Projects) par behas:**
+   * Aane wale mahine ke naye projects ki planning aur lazmi qadam uthaye jayenge.
+   * Team ke arkaan ko naye tasks ki takseem (distribution) ki jayegi.
+
+3. **Team ki tajweezat aur sawaalaat:**
+   * Sabhi arkaan ko apni mushkilat aur behtari ke liye tajweezat dene ka moqa diya jayega.
+   * Akhir mein sab ke sawalon ke jawab diye jayenge taake koi confusion na rahe.
+
+---
+
+**Waqt aur Jagah:**
+* **Waqt:** Subah 11:00 bajey (Peer, 12 June)
+* **Jagah:** Head Office ka Conference Room",,284,,1,manual grade from stage2-results.md: pass
+D6,D,real,meeting ka agenda banao 3 points phir har point pe 2 jumle phir waqt aur jagah likho,,"**Meeting ka Agenda:**
+
+1. **Q3 Sales Performance Review:** 
+   Pichle teen mahino ki sales reports ka ghor se jaiza liya jaye ga. Target achieve karne mein jo rukawatein aayin, un par tafseel se baat hogi.
+
+2. **New Marketing Strategies:** 
+   Aane wale mahino ke liye nayi digital marketing campaigns",,240,,0,manual grade from stage2-results.md: response truncated by the 400-token cap
+D7,D,benchmark,"Aik product ki description likho (50 alfaaz), phir us ke 3 fayde likho, phir us ki qeemat Rs 500 likho.",,"**Product Description:**
+Yeh shaandar aur lajawab wireless earbuds aap ko behtareen sound quality aur long-lasting battery life faraham karte hain. In ka ergonomic design kaanon mein aasani se fit ho jata hai, jis se aap baghair kisi rukawat ke lambay arsay tak music aur calls se lutf andoz ho sakte hain.
+
+**3 Fayde:**
+1. Behtareen aur saaf sound quality.
+2. Lambay arsay tak chalne wali battery.
+3. Kaanon mein aasani se aur araam deh fit hone wala design.
+
+**Qeemat:**
+Rs 500",,172,,1,manual grade from stage2-results.md: pass
+D7,D,real,product ki description likho 50 lafz phir 3 fayde phir qeemat 500 likho,~50-word description + 3 benefits + Rs 500,"**Product Description:**
+Yeh aik behtareen aur lajawab product hai jo aap ki rozmarra ki zaroorat ko asaan banata hai. Iska modern design aur high-quality material isay mazeed qeemti banata hai. Yeh istamal karne mein buhat asaan aur long-lasting hai. Aap isay zaroor try karein, yeh aap ki ummeedon par pora utre ga.
+
+**3 Fayde:**
+1. Istamal mein nihayat asaan aur halka phulka hai.
+2. Umda quality ki wajah se long-lasting (paindar) hai.
+3. Behtareen performance ke sath qabil-e-bharosa product hai.
+
+**Qeemat:**
+Rs. 500/-",2.46,191,,1,manual grade from stage2-results.md: pass
+D8,D,benchmark,"Pehle aik sawal ka jawab do: 'Chand par pehla qadam kisne rakha?' Phir us ke baare me 2 jumle aur likho, phir is maloomat ka source batao.",Neil Armstrong + 2 sentences + source,"**Sawal ka jawab:**
+Chand par pehla qadam **Neil Armstrong** (Neil Armstrong) ne rakha tha.
+
+**Mazeed 2 jumle:**
+1. Neil Armstrong ne 20 July 1969 ko Apollo 11 mission ke dauran chand ki satah par utar kar yeh tareekhi karname anjam diya tha.
+2. Is moqa par un ke sath doosre khala-baaz (astronaut) Buzz Aldrin bhi chand par utre thay.
+
+**Source (Zariya):**
+Yeh maloomat NASA (National Aeronautics and Space Administration) ki official tareekhi dastavez aur space history ke records par mabni hai.",1.82,193,,1,manual grade from stage2-results.md: pass
+D8,D,real,chand par pehla qadam kisne rakha phir us pe 2 jumle aur likho phir source btao,,"**Chand par pehla qadam kisne rakha:**
+
+Chand par pehla qadam **Neil Armstrong** (Neil Armstrong) ne rakha tha.
+
+**Us par 2 jumle:**
+1. Neil Armstrong ne 20 July 1969 ko American space mission Apollo 11 ke zariye chand ki satah par kam rakha tha.
+2. Chand par qadam rakhne ke baad unhone ek mashhoor jumla kaha tha: ""Yeh insan ka ek chhota sa qadam, insaniyat ke liye ek bara qadam hai.""
+
+**Source (Zariya):**
+Yeh waqiya **NASA** (National Aeronautics and Space Administration - American Space Agency) ki official tareekh aur records mein darj hai.",,184,,1,manual grade from stage2-results.md: pass
+D9,D,real,aik hafte ka khana plan banao 7 din har din aik khana phir shopping list banao,,"Yeh lijiye! 7 din ka ek mazedaar aur asaan khane (dinner) ka plan, aur uske sath hi poori shopping list. 
+
+### 📅 Ek Hafte Ka Khana Plan (Dinner)
+
+* **Sompeer (Monday):** Daal Chawal aur Aloo Bhujia *(Hafte ki shuruat ke liye halka aur mazedaar khana)*
+* **Mangal (Tuesday):** Chicken Karahi aur Roti *(Thoda spicy aur classic)*
+* **Budh (Wednesday):** Aloo Palak aur Roti *(Sehatmand aur sasta)*
+* **Jumerat (Thursday):** Anda Kari (Egg Curry) aur White Rice *(Jaldi banne wali aur lazeez dish)*
+* **Jumma (Friday):** Chicken Biryani ya Pulao *(Jumma ka din special hota hai)*
+* **Hafta (Saturday):** Sabzi Mix (Ghar ki bachi hui sabziyon ka salan) ya Daal Roti *(Weekend ka aaram)*
+* **Itwar (Sunday):** Seekh Kebab aur Paratha ya Naan, sath mein Raita *(Weekend ka mazaa)*
+
+---
+
+### 🛒 Supermarket / Grocery Shopping List
+
+Is list ko aap apni zaroorat aur ghar mein mojood cheezon ke hisaab se kam ya zyada kar sakte hain:
+
+#### 🍗 Gosht aur Anda (Meat & Eggs)
+* **Chicken:** 1.5 kg (Karahi aur Biryani ke liye)
+* **Keema ya Kebab:** 500 grams (Itwar ke liye)
+* **Anday (Eggs):** 1 darjan (12 adad)
+
+#### 🌾 Anaaj aur Daalain (Grains & Lentils)
+* **Chawal (Rice):** 2 kg (Basmati ya Saila)
+* **Aata (Flour):** Roti ke liye (agar zaroorat ho)
+* **Daal Masoor / Moong:** 1 pao (250g)
+
+#### 🥔 Sabziyan aur Phal (Vegetables - Hafte bhar ke liye)
+* **Aloo (Potatoes):** 2 kg
+* **Pyaaz (Onions):** 2 kg
+* **Tamatar (Tomatoes):** 1.5 kg
+* **Hari Mirchein (Green Chilies):** 250 grams
+* **Adrak aur Lehsan (Ginger & Garlic):** 250 grams (ya paste)
+* **Palak (Spinach):** 1 kg
+* **Nimbu (Lemons):** 4-5 adad
+
+#### 🥛 Dairy aur Oil (Dairy & Cooking Oil)
+* **Cooking",,618,,1,manual grade from stage2-results.md: pass
+D10,D,benchmark,"Aik chhota sa code likho jo 1 se 10 tak ke numbers print kare, phir batayein ke code kya karta hai, phir is me aik tabdeeli batayein jo numbers ko ulta print kare.",code + explanation + reverse change,"Ye raha Python mein 1 se 10 tak numbers print karne ka aik chhota sa code:
+
+### Code:
+```python
+for i in range(1, 11):
+    print(i)
+```
+
+---
+
+### Code kya karta hai?
+1. **`for i in range(1, 11)`**: Ye line aik loop banati hai jo 1 se shuru hota hai aur 10 tak jata hai (Python mein `range` ka aakhri number shamil nahi hota, isliye humne `11` likha hai taake 10 tak print ho).
+2. **`print(i)`**: Ye har dafa `i` ki current value ko screen par print kar deta hai.
+
+---
+
+### Tabdeeli (Numbers ko ulta print karna):
+Agar aap chahte hain ke numbers 10 se shuru hon aur 1 tak **ulta (reverse)** print hon, toh aap code mein yeh tabdeeli karenge:
+
+```python
+for i in range(10, 0, -1):
+    print(i)
+```
+
+**Is tabdeeli mein kya hua?**
+* Shuruat `10` se hogi.
+* Khatam `0` se pehle ( yaani `1` par) hoga.
+* `-1` ka matlab",22.65,357,,1,manual grade from stage2-results.md: pass
+D10,D,real,chhota sa code likho jo 1 se 10 tak numbers print kare phir btao code kya karta hai phir tabdeeli btao jo ulta print kare,code + explanation + reverse change,"Yeh lijiye Python mein 1 se 10 tak numbers print karne ka chhota sa code:
+
+```python
+for i in range(1, 11):
+    print(i)
+```
+
+---
+
+### 1. Code kya karta hai?
+* Yeh code ek **`for` loop** ka use karta hai jo 1 se shuru hota hai aur 10 tak jata hai (`range(1, 11)` mein 11 likhna padta hai kyunki Python aakhri number ko exclude karta hai).
+* Har iteration mein `i` ki value screen par print ho jati hai. Nateeja yeh hota hai ke 1 se 10 tak ginti print",5.98,355,,1,manual grade from stage2-results.md: pass

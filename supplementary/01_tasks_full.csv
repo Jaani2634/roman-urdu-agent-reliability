@@ -1,0 +1,41 @@
+task_id,original_category,analysis_category,benchmark_prompt,realworld_prompt,expected_answer
+A1,A,A,Pakistan ki abadi taqreeban kitni hai?,yr pakistan ki abadi kitni hai aj kal btao zara,~240 million
+A2,A,C,"15% of 2,500 kitna hota hai?",2500 ka 15 percent nikal do jaldi,375
+A3,A,A,Lahore se Islamabad ka fasla taqreeban kitna hai?,lahore se islamabad kitna door hai km me?,~375 km
+A4,A,A,Muse kis company ka AI assistant hai?,muse kis company ka hai?,Meta
+A5,A,A,2026 me Ramadan ka pehla roza taqreeban kis tareekh ko tha?,is saal ramzan kab se shuru hua tha pehla roza kis date ko tha?,19 Feb 2026
+A6,A,C,3 ghante 45 minute me kul kitne minute hote hain?,3 ghante 45 mint me kitne mint hote hain,225
+A7,A,A,Quaid-e-Azam ka poora naam kya hai?,quaid e azam ka pura naam kya tha,Muhammad Ali Jinnah
+A8,A,C,"Agar aik cheez ki qeemat Rs 800 hai aur us par 10% discount hai, to aakhri qeemat kya hogi?",800 wali cheez pe 10% off hai to kitne ki pare gi,Rs 720
+A9,A,A,Urdu me 'research' ko kya kehte hain?,research ko urdu me kya bolte hain,tehqeeq
+A10,A,C,7 x 8 + 12 kitna hota hai?,7*8+12 kitna hota hai btao,68
+B1,B,B,"Is list ko alphabet ke hisab se tartib do: Ali, Zara, Bilal, Sana, Usman.","in namon ko abc ke hisab se likh do: Ali, Zara, Bilal, Sana, Usman","Ali, Bilal, Sana, Usman, Zara"
+B2,B,B,Is jumle ka khulasa aik jumle me likho: 'Aik chhota sa gaon tha jahan aik boodha aadmi rehta tha. Woh roz subah uth kar apne khet me jata tha aur shaam ko wapas aakar apne poton ko kahaniyan sunata tha.',is ko aik jumle me btao: 'Aik chhota sa gaon tha jahan aik boodha aadmi rehta tha. Woh roz subah uth kar apne khet me jata tha aur shaam ko wapas aakar apne poton ko kahaniyan sunata tha.',summary with village+old man+field+stories
+B3,B,B,"Ye numbers barhte hue tartib me likho: 42, 7, 19, 103, 56.","42, 7, 19, 103, 56 ko chhote se bare likho","7, 19, 42, 56, 103"
+B4,B,B,Is paragraph me kitne alfaaz hain? 'Mera naam Ali hai. Main Lahore me rehta hoon. Mujhe cricket pasand hai.',is me kitne lafz hain? 'Mera naam Ali hai. Main Lahore me rehta hoon. Mujhe cricket pasand hai.',13
+B5,B,B,"Aik table banao: 3 sheher aur un ki mashhoor cheez — Lahore (khana), Karachi (samandar), Islamabad (pahari).","table banao lahore khana, karachi samandar, islamabad pahari","3-row table, all three cities"
+B6,B,B,"Is email ka jawab likho: 'Sir, kal ki meeting kis waqt hai?' — jawab me waqt poochne ke bajaye meeting ka waqt 11 baje batana hai.","is email ka jawab likh do: 'Sir, kal ki meeting kis waqt hai?' meeting 11 baje hai ye bhi bta dena",reply stating 11 o'clock
+B7,B,B,"'Pakistan, India, Bangladesh' — in teeno mulkon ke dar-ul-hukumat likho.",pakistan india bangladesh ke capital btao,"Islamabad, New Delhi, Dhaka"
+B8,B,B,"5 cheezon ki shopping list banao, har cheez ki qeemat ke sath, kul qeemat Rs 1,000 se kam ho.",5 cheezon ki list banao qeemat k sath total 1000 se kam ho,"5 items, prices, total < 1000 and correct"
+B9,B,B,Is jumle ko durust karo: 'Mujhe kal school jana hai aur mera homework bhi karna hai lekin waqt nahi hai.',is jumle ko theek karo: 'Mujhe kal school jana hai aur mera homework bhi karna hai lekin waqt nahi hai.',"corrected sentence, same meaning"
+B10,B,B,"Aik chhoti kahani ke 3 hisse likho: shuruaat, darmiyan, ikhtitam — topic: 'aik khoya hua bacha'.",aik khoye hue bache par chhoti kahani likho 3 hison me,"3 parts, one story"
+C1,C,C,Aik dukaan par 5 kg cheeni Rs 800 ki hai. 1 kg ki qeemat kya hai?,5 kilo cheeni 800 ki hai to 1 kilo kitne ka,Rs 160
+C2,C,C,"Agar aik train 60 km/h ki raftar se 3 ghante chale, to kitna fasla tay karegi?",train 60 km/h se 3 ghante chale to kitna fasla,180 km
+C3,C,C,1000 me se 37% nikal kar baqi kitna bachta hai?,1000 ka 37% nikal k btao kitna bacha,630
+C4,C,C,Aik kamra 12 foot lamba aur 10 foot chaura hai. Us ka raqba kitna hai?,kamra 12 foot lamba 10 foot chaura hai raqba kitna,120 sq ft
+C5,C,C,"2, 4, 8, 16, agla number kya hoga?",2 4 8 16 agla kya hoga,32
+C6,C,C,"Aik aadmi ki tankhwa Rs 50,000 hai. Woh 30% kharch karta hai. Kitne bachte hain?",tankhwa 50000 hai 30% kharcha to kitne bache,"Rs 35,000"
+C7,C,C,9:30 par nikalne wali bus 45 minute late hai. Woh kab niklegi?,bus 9:30 pe thi 45 mint late hai kab niklegi,10:15
+C8,C,C,3 doston ne Rs 900 barabar taqseem kiye. Har aik ko kitne mile?,900 rupay 3 doston me barabar banto har aik ko kitne,Rs 300
+C9,C,C,Aik rectangle ki lambai 8 aur chaurai 5 hai. Us ka perimeter kitna hai?,rectangle 8 by 5 hai perimeter kitna,26
+C10,C,C,"Agar aaj Jumma hai, to 10 din baad kaunsa din hoga?",aj juma hai 10 din bad konsa din hoga,Monday (Peer)
+D1,D,D,"Pehle 5 Pakistani shehron ke naam likho, phir un me se har aik ka aik mashhoor khana likho, phir poori list ko aik table me do.",yr pehle 5 pakistani shehron k naam likho phir har aik ka mashhoor khana phir table me do,5 cities + 5 foods in table
+D2,D,D,"Aik YouTube video ke liye 3 title options do, phir un me se behtareen chuno aur batayein kyun behtareen hai.",youtube video k liye 3 title do phir behtareen chuno aur btao kyun,3 titles + choice + reason
+D3,D,D,"Meri dukaan ke liye aik din ka schedule banao: subah 9 se shaam 6 tak, har ghante ka kaam likho.",dukan k liye aik din ka schedule banao subah 9 se shaam 6 har ghante ka kaam,"9 hours, each with a task"
+D4,D,D,"Is kahani ko parho: 'Ali ne aik kitab khareedi.' Phir is ka khulasa likho, phir is par aik sawal banao, phir us sawal ka jawab likho.",is kahani ko parho: 'Ali ne aik kitab khareedi.' phir khulasa likho phir sawal banao phir jawab likho,summary + question + answer
+D5,D,D,"Aik budget banao: mahina Rs 40,000, kiraya Rs 12,000, khana Rs 10,000, baqi bachat — kul hisab durust ho.",budget banao mahina 40000 kiraya 12000 khana 10000 baqi bachat hisab durust ho,"rent+food+balance Rs 18,000"
+D6,D,D,"Aik meeting ka agenda banao (3 points), phir har point par 2 jumle likho, phir meeting ka waqt aur jagah likho.",meeting ka agenda banao 3 points phir har point pe 2 jumle phir waqt aur jagah likho,agenda 3 points + detail + time/place
+D7,D,D,"Aik product ki description likho (50 alfaaz), phir us ke 3 fayde likho, phir us ki qeemat Rs 500 likho.",product ki description likho 50 lafz phir 3 fayde phir qeemat 500 likho,~50-word description + 3 benefits + Rs 500
+D8,D,D,"Pehle aik sawal ka jawab do: 'Chand par pehla qadam kisne rakha?' Phir us ke baare me 2 jumle aur likho, phir is maloomat ka source batao.",chand par pehla qadam kisne rakha phir us pe 2 jumle aur likho phir source btao,Neil Armstrong + 2 sentences + source
+D9,D,D,"Aik hafte ka khana plan banao (7 din), har din aik khana, phir un khanon ki aik shopping list banao.",aik hafte ka khana plan banao 7 din har din aik khana phir shopping list banao,7 days + shopping list
+D10,D,D,"Aik chhota sa code likho jo 1 se 10 tak ke numbers print kare, phir batayein ke code kya karta hai, phir is me aik tabdeeli batayein jo numbers ko ulta print kare.",chhota sa code likho jo 1 se 10 tak numbers print kare phir btao code kya karta hai phir tabdeeli btao jo ulta print kare,code + explanation + reverse change
